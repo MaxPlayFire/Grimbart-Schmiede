@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Пошук і каталог кованих виробів Grimbart Schmiede.">
+    <title>Каталог виробів — Grimbart Schmiede</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+  </head>
+  <body data-page="catalog">
+    <div id="site-header"></div>
+
+    <main class="container section-space catalog-page">
+      <nav aria-label="Навігаційний шлях" class="mb-3">
+        <ol class="breadcrumb small">
+          <li class="breadcrumb-item"><a href="index.html">Головна</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Каталог</li>
+        </ol>
+      </nav>
+      <div class="catalog-title">
+        <div>
+          <p class="eyebrow text-copper">Майстерня Grimbart</p>
+          <h1>Каталог виробів</h1>
+        </div>
+        <p class="text-secondary mb-0">Знайдіть річ, що пасуватиме саме вашому простору.</p>
+      </div>
+
+      <div class="row g-4">
+        <aside class="col-md-3" aria-label="Фільтри товарів">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="h5 mb-0">Фільтри</h2>
+            <button type="button" class="btn btn-sm btn-link p-0" id="reset-filters">Скинути</button>
+          </div>
+          <label for="category-filter" class="form-label">Категорія</label>
+          <select id="category-filter" class="form-select mb-4">
+            <option value="">Усі категорії</option>
+          </select>
+          <label for="price-filter" class="form-label">Максимальна ціна</label>
+          <div class="input-group">
+            <input id="price-filter" class="form-control" type="number" min="0" placeholder="Будь-яка" aria-label="Максимальна ціна">
+            <span class="input-group-text" id="currency-symbol">д.</span>
+          </div>
+          <div class="form-text" id="currency-description">Ціни вказані у срібних денаріях.</div>
+        </aside>
+
+        <section class="col-md-9" aria-label="Результати пошуку">
+          <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+            <p id="result-count" class="mb-0 text-secondary" aria-live="polite"></p>
+            <label class="sort-control">
+              <span class="visually-hidden">Сортувати вироби</span>
+              <select id="sort-filter" class="form-select form-select-sm">
+                <option value="popular">Спочатку популярні</option>
+                <option value="price-asc">Від дешевих до дорогих</option>
+                <option value="price-desc">Від дорогих до дешевих</option>
+                <option value="name">За назвою</option>
+              </select>
+            </label>
+          </div>
+          <div id="product-list" class="row g-4 product-grid" aria-live="polite">
+            <div class="col-12"><p class="text-secondary">Завантажуємо вироби…</p></div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
