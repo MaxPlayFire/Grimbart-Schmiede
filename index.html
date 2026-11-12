@@ -10,20 +10,69 @@
   </head>
   <body data-page="home">
     <div id="site-header"></div>
-    <main class="container py-4 py-md-5">
-      <section class="home-hero mb-5">
-        <p class="text-uppercase text-secondary small mb-2">Grimbart Schmiede</p>
-        <h1>Ковані речі ручної роботи</h1>
-        <p class="lead">Вироби майстерні та ціни у срібних денаріях.</p>
-        <a class="btn btn-primary" href="catalog.html">Перейти до каталогу</a>
+    <main>
+      <section class="home-hero">
+        <div class="container">
+          <div class="hero-plate armored-plate row align-items-center g-4 g-lg-5">
+            <div class="col-lg-6 hero-copy">
+              <p class="eyebrow"><span class="lamp-light" aria-hidden="true"></span> Ковальня · Пруссія · 1928</p>
+              <h1>Залізо.<br>Пара.<br><span>Воля.</span></h1>
+              <p class="lead">Речі, народжені у вогні та залізі. Ковані вручну для тих, хто творить власну історію.</p>
+              <a class="btn btn-primary btn-lg" href="catalog.html">Знайти своє спорядження <span aria-hidden="true">→</span></a>
+              <p class="hero-note">Майстерня Grimbart Schmiede <span aria-hidden="true">·</span> Ціни у срібних денаріях</p>
+            </div>
+            <div class="col-lg-6">
+              <figure class="hero-art mb-0">
+                <span class="plate-stamp" aria-hidden="true">№ 01<br>GS</span>
+                <img src="static/images/Grimbart.webp" alt="Механічний ходок із латунними деталями на зимовому полі">
+                <figcaption><span>Серія «Північ»</span> Залізний ходок · ручне складання</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section aria-labelledby="featured-heading">
-        <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
-          <h2 id="featured-heading" class="h3 mb-0">Популярні вироби</h2>
-          <a href="catalog.html">Усі вироби</a>
+      <section class="field-notes" aria-labelledby="field-notes-heading">
+        <div class="container">
+          <div class="section-heading field-notes-heading">
+            <div>
+              <p class="eyebrow">Польовий архів · 1928</p>
+              <h2 id="field-notes-heading">Механічні хроніки</h2>
+            </div>
+            <p class="field-notes-intro">Залізні велети, туманні рубежі та машини, що не знають втоми.</p>
+          </div>
+          <div class="row g-4">
+            <div class="col-12 col-md-4">
+              <figure class="archive-card mb-0">
+                <img src="static/images/_%20(2).jpeg" alt="Вартовий і броньований крокомобіль у тумані">
+                <figcaption><span>Архів № 07</span>Вартові імперського рубежу</figcaption>
+              </figure>
+            </div>
+            <div class="col-12 col-md-4">
+              <figure class="archive-card mb-0">
+                <img src="static/images/Jakub-rozalski-1920-true-fishermans.webp" alt="Мандрівник зустрічає велетенську машину біля лісового озера">
+                <figcaption><span>Північний тракт</span>Тиша перед гуркотом</figcaption>
+              </figure>
+            </div>
+            <div class="col-12 col-md-4">
+              <figure class="archive-card archive-card-machine mb-0">
+                <img src="static/images/Sax_mech_gatling.webp" alt="Крокомобіль у прусько-синій броні з латунними деталями">
+                <figcaption><span>Серія «Грімбарт»</span>Механізм польового класу</figcaption>
+              </figure>
+            </div>
+          </div>
         </div>
-        <div id="featured-products" class="row g-3" aria-live="polite">
+      </section>
+
+      <section class="container featured-section" aria-labelledby="featured-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">З майстерні</p>
+            <h2 id="featured-heading">Вибір майстра</h2>
+          </div>
+          <a class="text-link" href="catalog.html">Усі вироби <span aria-hidden="true">→</span></a>
+        </div>
+        <div id="featured-products" class="row g-4" aria-live="polite">
           <div class="col-12"><p class="text-secondary">Завантажуємо вироби…</p></div>
         </div>
       </section>

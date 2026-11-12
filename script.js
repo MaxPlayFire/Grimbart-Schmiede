@@ -30,9 +30,12 @@ function addSharedNavigation() {
   const catalogLinkClass = currentPage === "catalog" ? "nav-link active" : "nav-link";
 
   header.innerHTML = `
-    <nav class="navbar navbar-expand-md bg-light border-bottom" aria-label="Головна навігація">
+    <nav class="navbar navbar-expand-md site-navbar" aria-label="Головна навігація">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Grimbart Schmiede</a>
+        <a class="navbar-brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">G</span>
+          <span>Grimbart <span class="brand-light">Schmiede</span></span>
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
           data-bs-target="#main-navigation" aria-controls="main-navigation"
           aria-expanded="false" aria-label="Відкрити меню">
@@ -46,6 +49,9 @@ function addSharedNavigation() {
             <li class="nav-item">
               <a class="${catalogLinkClass}" href="catalog.html" ${currentPage === "catalog" ? 'aria-current="page"' : ""}>Каталог</a>
             </li>
+            <li class="nav-item theme-item">
+              <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">☾ Темна тема</button>
+            </li>
           </ul>
         </div>
       </div>
@@ -53,10 +59,37 @@ function addSharedNavigation() {
   `;
 
   footer.innerHTML = `
-    <footer class="container py-4 mt-4 border-top">
-      <p class="mb-0 text-secondary">Grimbart Schmiede — вироби ручного кування.</p>
+    <footer class="site-footer">
+      <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <a class="footer-brand" href="index.html">Grimbart Schmiede</a>
+        <p class="mb-0">Коване залізо · Срібні денарії · Пруссія, 1928</p>
+      </div>
     </footer>
   `;
+}
+
+// Вибрана тема лишається однаковою на головній, у каталозі та на сторінці товару.
+function setupTheme() {
+  const themeButton = document.querySelector("#theme-toggle");
+  const startingTheme = localStorage.getItem("grimbart-theme") === "dark" ? "dark" : "light";
+
+  function setTheme(theme) {
+    document.documentElement.setAttribute("data-bs-theme", theme);
+    themeButton.textContent = theme === "dark" ? "☼ Світла тема" : "☾ Темна тема";
+    themeButton.setAttribute(
+      "aria-label",
+      theme === "dark" ? "Перемкнути на світлу тему" : "Перемкнути на темну тему"
+    );
+    themeButton.setAttribute("aria-pressed", String(theme === "dark"));
+  }
+
+  setTheme(startingTheme);
+  themeButton.addEventListener("click", () => {
+    const nextTheme = document.documentElement.getAttribute("data-bs-theme") === "dark" ? "light" : "dark";
+    localStorage.setItem("grimbart-theme", nextTheme);
+    // CSS animates the palette swap and the reduced-motion rule disables that motion.
+    setTheme(nextTheme);
+  });
 }
 
 // Отримуємо JSON із сервера і перевіряємо найважливіші поля перед використанням.
@@ -106,14 +139,14 @@ function formatPrice(price) {
 // Створюємо картку, яка веде на окрему сторінку опису товару.
 function makeProductCard(product) {
   const column = makeElement("div", "col-12 col-sm-6 col-xl-4");
-  const card = makeElement("article", "card h-100");
-  const cardBody = makeElement("div", "card-body d-flex flex-column");
-  const category = makeElement("p", "small text-secondary mb-2", product.category);
-  const heading = makeElement("h2", "h5");
+  const card = makeElement("article", "product-card h-100");
+  const cardBody = makeElement("div", "product-card-body");
+  const category = makeElement("p", "product-category", product.category);
+  const heading = makeElement("h2", "product-title");
   const titleLink = makeElement("a", "text-decoration-none", product.name);
-  const description = makeElement("p", "card-text", product.description);
-  const price = makeElement("p", "fw-semibold mt-auto mb-3", formatPrice(product.price));
-  const detailsLink = makeElement("a", "btn btn-outline-primary align-self-start", "Детальніше");
+  const description = makeElement("p", "product-description", product.description);
+  const price = makeElement("p", "product-price", formatPrice(product.price));
+  const detailsLink = makeElement("a", "btn btn-outline-primary product-link", "Детальніше");
 
   // ID у посиланні допомагає сторінці product.html знайти потрібний товар у JSON.
   const productUrl = `product.html?id=${encodeURIComponent(product.id)}`;
@@ -243,12 +276,12 @@ function showProductDetail() {
   document.title = `${product.name} — Grimbart Schmiede`;
   document.querySelector("#product-breadcrumb").textContent = product.name;
 
-  const article = makeElement("article", "row g-4");
-  const content = makeElement("div", "col-12 col-lg-8");
-  const category = makeElement("p", "text-secondary mb-2", product.category);
+  const article = makeElement("article", "row g-4 product-detail-layout");
+  const content = makeElement("div", "col-12 col-lg-8 product-detail-card");
+  const category = makeElement("p", "product-category", product.category);
   const heading = makeElement("h1", "mb-3", product.name);
-  const description = makeElement("p", "lead", product.description);
-  const price = makeElement("p", "h4 mb-4", formatPrice(product.price));
+  const description = makeElement("p", "lead product-description", product.description);
+  const price = makeElement("p", "product-price product-detail-price", formatPrice(product.price));
   const backLink = makeElement("a", "btn btn-primary", "Повернутися до каталогу");
 
   backLink.href = "catalog.html";
@@ -260,6 +293,7 @@ function showProductDetail() {
 // Спершу додаємо меню, а тоді завантажуємо JSON і запускаємо логіку потрібної сторінки.
 async function startSite() {
   addSharedNavigation();
+  setupTheme();
 
   try {
     shopData = await loadShopData();
