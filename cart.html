@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Кошик і оформлення замовлення Grimbart Schmiede.">
+    <title>Кошик — Grimbart Schmiede</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+  </head>
+  <body data-page="cart">
+    <div id="site-header"></div>
+    <main class="container cart-page py-4 py-md-5">
+      <nav class="mb-4" data-i18n-aria-label="breadcrumbLabel">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html" data-i18n="breadcrumbHome">Головна</a></li>
+          <li class="breadcrumb-item active" aria-current="page" data-i18n="cart">Кошик</li>
+        </ol>
+      </nav>
+      <div id="cart-content" aria-live="polite">
+        <p class="text-secondary" data-i18n="loading">Завантажуємо…</p>
+      </div>
+    </main>
+    <div id="site-footer"></div>
+    <iframe class="order-response-frame" id="order-response-frame" name="order-response-frame" title="Order response" hidden></iframe>
+    <script src="static/config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

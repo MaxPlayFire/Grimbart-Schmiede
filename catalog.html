@@ -15,53 +15,53 @@
       <div class="container">
         <!-- Keep the breadcrumb, filters, and results inside the same armor plate. -->
         <div class="catalog-plate armored-plate">
-          <nav aria-label="Навігаційний шлях" class="mb-3">
+          <nav class="mb-3" data-i18n-aria-label="breadcrumbLabel">
             <ol class="breadcrumb small">
-              <li class="breadcrumb-item"><a href="index.html">Головна</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Каталог</li>
+              <li class="breadcrumb-item"><a href="index.html" data-i18n="breadcrumbHome">Головна</a></li>
+              <li class="breadcrumb-item active" aria-current="page" data-i18n="breadcrumbCatalog">Каталог</li>
             </ol>
           </nav>
           <div class="catalog-title">
             <div>
-              <p class="eyebrow">Майстерня Grimbart</p>
-              <h1>Каталог виробів</h1>
+              <p class="eyebrow" data-i18n="workshop">Майстерня Grimbart</p>
+              <h1 data-i18n="catalogTitle">Каталог виробів</h1>
             </div>
-            <p class="text-secondary mb-0">Знайдіть річ, що пасуватиме саме вашому простору.</p>
+            <p class="text-secondary mb-0" data-i18n="catalogIntro">Знайдіть річ, що пасуватиме саме вашому простору.</p>
           </div>
 
           <div class="row g-4">
-            <aside class="col-md-3 filter-panel" aria-label="Фільтри товарів">
+            <aside class="col-md-3 filter-panel" data-i18n-aria-label="filterLabel">
               <div class="d-flex justify-content-between align-items-center mb-3">
-                <h2 class="h5 mb-0">Фільтри</h2>
-                <button type="button" class="btn btn-sm btn-link p-0" id="reset-filters">Скинути</button>
+                <h2 class="h5 mb-0" data-i18n="filters">Фільтри</h2>
+                <button type="button" class="btn btn-sm btn-link p-0" id="reset-filters" data-i18n="reset">Скинути</button>
               </div>
-              <label for="category-filter" class="form-label">Категорія</label>
+              <label for="category-filter" class="form-label" data-i18n="category">Категорія</label>
               <select id="category-filter" class="form-select mb-4">
-                <option value="">Усі категорії</option>
+                <option value="" data-i18n="allCategories">Усі категорії</option>
               </select>
-              <label for="price-filter" class="form-label">Максимальна ціна</label>
+              <label for="price-filter" class="form-label" data-i18n="maxPrice">Максимальна ціна</label>
               <div class="input-group">
-                <input id="price-filter" class="form-control" type="number" min="0" placeholder="Будь-яка" aria-label="Максимальна ціна">
+                <input id="price-filter" class="form-control" type="number" min="0" placeholder="Будь-яка" data-i18n-placeholder="anyPrice" data-i18n-aria-label="maxPrice">
                 <span class="input-group-text" id="currency-symbol">д.</span>
               </div>
-              <div class="form-text" id="currency-description">Ціни вказані у срібних денаріях.</div>
+              <div class="form-text" id="currency-description" data-i18n="pricesIn">Ціни вказані у срібних денаріях.</div>
             </aside>
 
-            <section class="col-md-9" aria-label="Результати пошуку">
+            <section class="col-md-9" data-i18n-aria-label="resultsLabel">
               <div class="catalog-toolbar">
                 <p id="result-count" class="mb-0 text-secondary" aria-live="polite"></p>
                 <label class="sort-control">
-                  <span class="visually-hidden">Сортувати вироби</span>
+                  <span class="visually-hidden" data-i18n="sort">Сортувати вироби</span>
                   <select id="sort-filter" class="form-select form-select-sm">
-                    <option value="popular">Спочатку популярні</option>
-                    <option value="price-asc">Від дешевих до дорогих</option>
-                    <option value="price-desc">Від дорогих до дешевих</option>
-                    <option value="name">За назвою</option>
+                    <option value="popular" data-i18n="popular">Спочатку популярні</option>
+                    <option value="price-asc" data-i18n="priceAsc">Від дешевих до дорогих</option>
+                    <option value="price-desc" data-i18n="priceDesc">Від дорогих до дешевих</option>
+                    <option value="name" data-i18n="sortName">За назвою</option>
                   </select>
                 </label>
               </div>
               <div id="product-list" class="row g-4 product-grid" aria-live="polite">
-                <div class="col-12"><p class="text-secondary">Завантажуємо вироби…</p></div>
+                <div class="col-12"><p class="text-secondary" data-i18n="loading">Завантажуємо вироби…</p></div>
               </div>
             </section>
           </div>
@@ -70,6 +70,7 @@
     </main>
 
     <div id="site-footer"></div>
+    <script src="static/config.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
   </body>

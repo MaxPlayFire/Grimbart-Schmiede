@@ -4,6 +4,11 @@
     "plural": "срібних денаріїв",
     "symbol": "д."
   },
+  "coupons": {
+    "IRON10": {
+      "percent": 10
+    }
+  },
   "products": [
     {
       "id": "wall-candlestick",
@@ -11,7 +16,32 @@
       "category": "Для дому",
       "price": 180,
       "description": "Кований настінний свічник із гачком для підвішування та загнутим підсвічником.",
-      "popular": 98
+      "popular": 98,
+      "image": "static/images/Grimbart.webp",
+      "imageAlt": "Механічний ходок у сталевій броні",
+      "warrantyPrice": 35,
+      "translations": {
+        "en": {
+          "name": "Raven Wall Candleholder",
+          "category": "For the home",
+          "description": "A hand-forged wall candleholder with a hanging hook and a curved candle cup.",
+          "imageAlt": "Steel-armoured mechanical walker",
+          "details": "A sturdy hand-forged candleholder made for a workshop, entryway or reading nook. Each piece is finished by hand.",
+          "variants": [{"id":"compact","label":"Compact","adjustment":-20},{"id":"standard","label":"Standard","adjustment":0},{"id":"grand","label":"Grand","adjustment":45}]
+        },
+        "de": {
+          "name": "Wandkerzenhalter „Rabe“",
+          "category": "Fürs Zuhause",
+          "description": "Handgeschmiedeter Wandkerzenhalter mit Aufhängehaken und geschwungenem Kerzenteller.",
+          "imageAlt": "Mechanischer Läufer in Stahlpanzerung",
+          "details": "Ein robuster, handgeschmiedeter Kerzenhalter für Werkstatt, Eingangsbereich oder Leseecke. Jedes Stück wird von Hand vollendet.",
+          "variants": [{"id":"compact","label":"Kompakt","adjustment":-20},{"id":"standard","label":"Standard","adjustment":0},{"id":"grand","label":"Groß","adjustment":45}]
+        }
+      },
+      "translationsUk": {
+        "details": "Міцний свічник ручного кування для майстерні, передпокою чи куточка для читання. Кожен виріб доведено вручну.",
+        "variants": [{"id":"compact","label":"Компактний","adjustment":-20},{"id":"standard","label":"Стандартний","adjustment":0},{"id":"grand","label":"Великий","adjustment":45}]
+      }
     },
     {
       "id": "hand-forged-knife",
@@ -19,7 +49,32 @@
       "category": "Інструменти",
       "price": 420,
       "description": "Універсальний ніж із кованим сталевим лезом і дерев'яним руків'ям.",
-      "popular": 94
+      "popular": 94,
+      "image": "static/images/Sax_mech_gatling.webp",
+      "imageAlt": "Броньована машина майстерні",
+      "warrantyPrice": 55,
+      "translations": {
+        "en": {
+          "name": "Craftsman's Knife",
+          "category": "Tools",
+          "description": "A versatile knife with a forged steel blade and wooden handle.",
+          "imageAlt": "Armoured workshop machine",
+          "details": "A dependable everyday knife with a forged steel blade and shaped wooden handle. Made for practical work and long service.",
+          "variants": [{"id":"short","label":"Short blade","adjustment":0},{"id":"standard","label":"Standard blade","adjustment":35}]
+        },
+        "de": {
+          "name": "Handwerker-Messer",
+          "category": "Werkzeuge",
+          "description": "Ein vielseitiges Messer mit geschmiedeter Stahlklinge und Holzgriff.",
+          "imageAlt": "Gepanzerte Werkstattmaschine",
+          "details": "Ein zuverlässiges Alltagsmesser mit geschmiedeter Stahlklinge und geformtem Holzgriff. Für praktische Arbeit und lange Nutzung gefertigt.",
+          "variants": [{"id":"short","label":"Kurze Klinge","adjustment":0},{"id":"standard","label":"Standardklinge","adjustment":35}]
+        }
+      },
+      "translationsUk": {
+        "details": "Надійний ніж на щодень із кованим сталевим лезом і зручним дерев'яним руків'ям. Створений для роботи й довгої служби.",
+        "variants": [{"id":"short","label":"Коротке лезо","adjustment":0},{"id":"standard","label":"Стандартне лезо","adjustment":35}]
+      }
     },
     {
       "id": "horse-shoe",
@@ -27,7 +82,32 @@
       "category": "Кінська збруя",
       "price": 260,
       "description": "Міцна підкова ручного кування з чотирма отворами для цвяхів.",
-      "popular": 90
+      "popular": 90,
+      "image": "static/images/Jakub-rozalski-1920-true-fishermans.webp",
+      "imageAlt": "Механічний велет на північному тракті",
+      "warrantyPrice": 40,
+      "translations": {
+        "en": {
+          "name": "Hand-Forged Horseshoe",
+          "category": "Horse tack",
+          "description": "A durable hand-forged horseshoe with four nail holes.",
+          "imageAlt": "Mechanical giant on the northern trail",
+          "details": "A durable, hand-forged horseshoe with four nail holes, shaped for reliable everyday use.",
+          "variants": [{"id":"small","label":"Small","adjustment":0},{"id":"medium","label":"Medium","adjustment":20},{"id":"large","label":"Large","adjustment":40}]
+        },
+        "de": {
+          "name": "Handgeschmiedetes Hufeisen",
+          "category": "Pferdebedarf",
+          "description": "Ein robustes, handgeschmiedetes Hufeisen mit vier Nagellöchern.",
+          "imageAlt": "Mechanischer Riese auf dem Nordweg",
+          "details": "Ein robustes, handgeschmiedetes Hufeisen mit vier Nagellöchern, geformt für den zuverlässigen täglichen Einsatz.",
+          "variants": [{"id":"small","label":"Klein","adjustment":0},{"id":"medium","label":"Mittel","adjustment":20},{"id":"large","label":"Groß","adjustment":40}]
+        }
+      },
+      "translationsUk": {
+        "details": "Міцна кована підкова з чотирма отворами для цвяхів, зроблена для надійного щоденного використання.",
+        "variants": [{"id":"small","label":"Мала","adjustment":0},{"id":"medium","label":"Середня","adjustment":20},{"id":"large","label":"Велика","adjustment":40}]
+      }
     },
     {
       "id": "belt-buckle",
@@ -35,7 +115,32 @@
       "category": "Одяг і оздоби",
       "price": 340,
       "description": "Залізна пряжка з простим рослинним орнаментом, викованим вручну.",
-      "popular": 85
+      "popular": 85,
+      "image": "static/images/Grimbart.webp",
+      "imageAlt": "Крупний план сталевої броні з латунними деталями",
+      "warrantyPrice": 45,
+      "translations": {
+        "en": {
+          "name": "Oak Leaf Belt Buckle",
+          "category": "Clothing & ornaments",
+          "description": "An iron buckle with a simple hand-forged leaf pattern.",
+          "imageAlt": "Steel armour with brass details",
+          "details": "A solid iron buckle with a restrained oak-leaf motif, forged and finished by hand.",
+          "variants": [{"id":"narrow","label":"Narrow belt","adjustment":0},{"id":"wide","label":"Wide belt","adjustment":25}]
+        },
+        "de": {
+          "name": "Gürtelschnalle „Eichenblatt“",
+          "category": "Kleidung & Schmuck",
+          "description": "Eine Eisenschnalle mit schlichtem, handgeschmiedetem Blattmuster.",
+          "imageAlt": "Stahlpanzerung mit Messingdetails",
+          "details": "Eine stabile Eisenschnalle mit dezentem Eichenblattmotiv, von Hand geschmiedet und vollendet.",
+          "variants": [{"id":"narrow","label":"Schmaler Gürtel","adjustment":0},{"id":"wide","label":"Breiter Gürtel","adjustment":25}]
+        }
+      },
+      "translationsUk": {
+        "details": "Міцна залізна пряжка зі стриманим мотивом дубового листя, викована й оздоблена вручну.",
+        "variants": [{"id":"narrow","label":"Вузький ремінь","adjustment":0},{"id":"wide","label":"Широкий ремінь","adjustment":25}]
+      }
     },
     {
       "id": "fireplace-tongs",
@@ -43,7 +148,32 @@
       "category": "Для дому",
       "price": 310,
       "description": "Зручні щипці для догляду за жаром у домашньому вогнищі.",
-      "popular": 80
+      "popular": 80,
+      "image": "static/images/Sax_mech_gatling.webp",
+      "imageAlt": "Механічна машина у сталевій броні",
+      "warrantyPrice": 50,
+      "translations": {
+        "en": {
+          "name": "Forge Fireplace Tongs",
+          "category": "For the home",
+          "description": "Comfortable tongs for tending the fire in a home hearth.",
+          "imageAlt": "Mechanical machine in steel armour",
+          "details": "Strong, balanced tongs for safely tending hot coals and keeping the hearth in order.",
+          "variants": [{"id":"short","label":"Short","adjustment":0},{"id":"long","label":"Long","adjustment":40}]
+        },
+        "de": {
+          "name": "Schmiedezange für den Kamin",
+          "category": "Fürs Zuhause",
+          "description": "Handliche Zange zur Pflege des Feuers in der heimischen Feuerstelle.",
+          "imageAlt": "Mechanische Maschine in Stahlpanzerung",
+          "details": "Eine kräftige, gut ausbalancierte Zange zum sicheren Bewegen heißer Kohlen und zur Pflege der Feuerstelle.",
+          "variants": [{"id":"short","label":"Kurz","adjustment":0},{"id":"long","label":"Lang","adjustment":40}]
+        }
+      },
+      "translationsUk": {
+        "details": "Міцні та збалансовані щипці для безпечного догляду за жаром і підтримання ладу у вогнищі.",
+        "variants": [{"id":"short","label":"Короткі","adjustment":0},{"id":"long","label":"Довгі","adjustment":40}]
+      }
     },
     {
       "id": "door-hinge",
@@ -51,7 +181,32 @@
       "category": "Для дому",
       "price": 230,
       "description": "Декоративна залізна завіса для скрині, хвіртки або дверей.",
-      "popular": 76
+      "popular": 76,
+      "image": "static/images/Jakub-rozalski-1920-true-fishermans.webp",
+      "imageAlt": "Механічний крокомобіль у тумані",
+      "warrantyPrice": 35,
+      "translations": {
+        "en": {
+          "name": "Hand-Forged Door Hinge",
+          "category": "For the home",
+          "description": "A decorative iron hinge for a chest, gate or door.",
+          "imageAlt": "Mechanical walker in the mist",
+          "details": "A decorative but sturdy iron hinge for chests, gates and doors, shaped to work smoothly over time.",
+          "variants": [{"id":"short","label":"Short strap","adjustment":0},{"id":"long","label":"Long strap","adjustment":30}]
+        },
+        "de": {
+          "name": "Handgeschmiedetes Türband",
+          "category": "Fürs Zuhause",
+          "description": "Ein dekoratives Eisenband für Truhe, Tor oder Tür.",
+          "imageAlt": "Mechanischer Läufer im Nebel",
+          "details": "Ein dekoratives und zugleich stabiles Eisenband für Truhen, Tore und Türen, für leichtgängige Bewegung geformt.",
+          "variants": [{"id":"short","label":"Kurzes Band","adjustment":0},{"id":"long","label":"Langes Band","adjustment":30}]
+        }
+      },
+      "translationsUk": {
+        "details": "Декоративна й водночас міцна залізна завіса для скрині, хвіртки або дверей, сформована для плавного ходу.",
+        "variants": [{"id":"short","label":"Коротка завіса","adjustment":0},{"id":"long","label":"Довга завіса","adjustment":30}]
+      }
     },
     {
       "id": "iron-fibula",
@@ -59,7 +214,32 @@
       "category": "Одяг і оздоби",
       "price": 390,
       "description": "Кована застібка-фібула для плаща з лаконічним вузловим візерунком.",
-      "popular": 72
+      "popular": 72,
+      "image": "static/images/Grimbart.webp",
+      "imageAlt": "Деталі кованої сталі та латуні",
+      "warrantyPrice": 50,
+      "translations": {
+        "en": {
+          "name": "Sun Knot Iron Fibula",
+          "category": "Clothing & ornaments",
+          "description": "A hand-forged cloak pin with a clean knot pattern.",
+          "imageAlt": "Forged steel and brass details",
+          "details": "A practical cloak fastener with a restrained knot design, forged from iron and finished by hand.",
+          "variants": [{"id":"small","label":"Small","adjustment":0},{"id":"large","label":"Large","adjustment":35}]
+        },
+        "de": {
+          "name": "Eisenfibel „Sonnenknoten“",
+          "category": "Kleidung & Schmuck",
+          "description": "Eine handgeschmiedete Mantelfibel mit schlichtem Knotenmuster.",
+          "imageAlt": "Geschmiedete Stahl- und Messingdetails",
+          "details": "Eine praktische Mantelschließe mit dezentem Knotenmuster, aus Eisen geschmiedet und von Hand vollendet.",
+          "variants": [{"id":"small","label":"Klein","adjustment":0},{"id":"large","label":"Groß","adjustment":35}]
+        }
+      },
+      "translationsUk": {
+        "details": "Практична застібка для плаща зі стриманим вузловим орнаментом, кована із заліза та оздоблена вручну.",
+        "variants": [{"id":"small","label":"Мала","adjustment":0},{"id":"large","label":"Велика","adjustment":35}]
+      }
     },
     {
       "id": "lantern-hook",
@@ -67,7 +247,32 @@
       "category": "Для дому",
       "price": 150,
       "description": "Кований гак для підвішування ліхтаря біля входу чи в майстерні.",
-      "popular": 68
+      "popular": 68,
+      "image": "static/images/Sax_mech_gatling.webp",
+      "imageAlt": "Латунні деталі механізму",
+      "warrantyPrice": 25,
+      "translations": {
+        "en": {
+          "name": "Lantern Hook",
+          "category": "For the home",
+          "description": "A forged hook for hanging a lantern by an entrance or in a workshop.",
+          "imageAlt": "Brass details on a machine",
+          "details": "A forged iron hook for securely hanging a lantern in a workshop, entryway or covered porch.",
+          "variants": [{"id":"standard","label":"Standard","adjustment":0},{"id":"reinforced","label":"Reinforced","adjustment":25}]
+        },
+        "de": {
+          "name": "Laternenhaken",
+          "category": "Fürs Zuhause",
+          "description": "Ein geschmiedeter Haken zum Aufhängen einer Laterne am Eingang oder in der Werkstatt.",
+          "imageAlt": "Messingdetails an einer Maschine",
+          "details": "Ein geschmiedeter Eisenhaken zum sicheren Aufhängen einer Laterne in Werkstatt, Eingangsbereich oder überdachtem Vorbau.",
+          "variants": [{"id":"standard","label":"Standard","adjustment":0},{"id":"reinforced","label":"Verstärkt","adjustment":25}]
+        }
+      },
+      "translationsUk": {
+        "details": "Кований залізний гак для надійного підвішування ліхтаря у майстерні, передпокої чи під навісом.",
+        "variants": [{"id":"standard","label":"Стандартний","adjustment":0},{"id":"reinforced","label":"Посилений","adjustment":25}]
+      }
     }
   ]
 }

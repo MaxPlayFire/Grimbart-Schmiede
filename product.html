@@ -11,10 +11,10 @@
   <body data-page="product">
     <div id="site-header"></div>
     <main class="container py-4 py-md-5">
-      <nav aria-label="Навігаційний шлях" class="mb-4">
+      <nav class="mb-4" data-i18n-aria-label="breadcrumbLabel">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Головна</a></li>
-          <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
+          <li class="breadcrumb-item"><a href="index.html" data-i18n="breadcrumbHome">Головна</a></li>
+          <li class="breadcrumb-item"><a href="catalog.html" data-i18n="breadcrumbCatalog">Каталог</a></li>
           <li class="breadcrumb-item active" aria-current="page" id="product-breadcrumb">Виріб</li>
         </ol>
       </nav>
@@ -23,6 +23,7 @@
       </div>
     </main>
     <div id="site-footer"></div>
+    <script src="static/config.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
