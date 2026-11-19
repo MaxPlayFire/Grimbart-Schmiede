@@ -99,6 +99,9 @@ function updateCartBadge() {
   const count = getCart().reduce((total, item) => total + item.quantity, 0);
   badge.textContent = String(count);
   badge.hidden = count === 0;
+  badge.classList.remove("is-bumping");
+  void badge.offsetWidth;
+  badge.classList.add("is-bumping");
   badge.setAttribute("aria-label", `${t("cart")}: ${count}`);
 }
 
@@ -172,6 +175,9 @@ function setupTheme() {
 
   setTheme(localStorage.getItem("grimbart-theme") === "dark" ? "dark" : "light");
   button.addEventListener("click", () => {
+    button.classList.remove("is-turning");
+    void button.offsetWidth;
+    button.classList.add("is-turning");
     const nextTheme = document.documentElement.dataset.bsTheme === "dark" ? "light" : "dark";
     localStorage.setItem("grimbart-theme", nextTheme);
     setTheme(nextTheme);
@@ -179,7 +185,7 @@ function setupTheme() {
 }
 
 async function loadData() {
-  const cacheVersion = "20261119";
+  const cacheVersion = "20261119b";
   const [productsResponse, translationsResponse] = await Promise.all([
     fetch(`${PRODUCTS_FILE}?v=${cacheVersion}`),
     fetch(`${TRANSLATIONS_FILE}?v=${cacheVersion}`)
@@ -223,7 +229,15 @@ function makeProductCard(sourceProduct) {
 }
 
 function showProducts(container, products) {
-  container.replaceChildren(...products.map(makeProductCard));
+  const cards = products.map((product, index) => {
+    const column = makeProductCard(product);
+    // Small delays make repeated card entrances feel assembled, not uniformly animated.
+    column.style.setProperty("--card-delay", `${Math.min(index * 55, 330)}ms`);
+    const card = column.querySelector(".product-card");
+    if (card) card.style.animationDelay = `${Math.min(index * 55, 330)}ms`;
+    return column;
+  });
+  container.replaceChildren(...cards);
 }
 
 function showFeaturedProducts() {
@@ -336,6 +350,9 @@ function showProductDetail() {
       thumb.alt = `${localized.imageAlt} ${index + 1}`;
       button.append(thumb);
       button.addEventListener("click", () => {
+        image.classList.remove("is-switching");
+        void image.offsetWidth;
+        image.classList.add("is-switching");
         image.src = photo;
         thumbnails.querySelectorAll(".product-gallery-thumb").forEach((item) => item.classList.remove("is-active"));
         button.classList.add("is-active");
@@ -644,6 +661,21 @@ function sendOrder(form, status, button, cart) {
   postForm.submit();
 }
 
+function setupScrollMotion() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const elements = document.querySelectorAll(".section-heading, .hero-art, .catalog-plate, .filter-panel, .cart-lines, .cart-summary, .product-detail-card");
+  elements.forEach((element) => element.classList.add("motion-reveal"));
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  elements.forEach((element) => observer.observe(element));
+}
+
 async function startSite() {
   language = localStorage.getItem("grimbart-language") || "uk";
   if (!["uk", "en", "de"].includes(language)) language = "uk";
@@ -662,6 +694,7 @@ async function startSite() {
     else if (page === "catalog") setupCatalog();
     else if (page === "product") showProductDetail();
     else if (page === "cart") renderCart();
+    setupScrollMotion();
   } catch (error) {
     console.error("Could not initialize the shop.", error);
     const main = document.querySelector("main");

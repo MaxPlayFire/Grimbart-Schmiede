@@ -1134,6 +1134,176 @@ h3 {
   }
 }
 
+/* Page details enter with small, mechanical motion instead of floating generic fades. */
+@keyframes page-arrival {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes header-arrival {
+  from { opacity: 0; transform: translateY(-24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes brass-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgb(228 201 130 / 0%), var(--shadow); }
+  45% { box-shadow: 0 0 18px 2px rgb(228 201 130 / 26%), var(--shadow); }
+}
+
+@keyframes theme-turn {
+  0% { transform: rotate(0deg) scale(1); }
+  55% { transform: rotate(180deg) scale(0.86); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+@keyframes badge-pop {
+  0% { transform: scale(0.7); }
+  55% { transform: scale(1.18); }
+  100% { transform: scale(1); }
+}
+
+@keyframes gallery-switch {
+  from { opacity: 0.4; filter: saturate(0.45) blur(2px); transform: scale(1.015); }
+  to { opacity: 1; filter: saturate(1); transform: scale(1); }
+}
+
+@keyframes rivet-click {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.82); }
+  100% { transform: scale(1); }
+}
+
+#site-header {
+  animation: header-arrival 620ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+main {
+  animation: page-arrival 680ms cubic-bezier(0.16, 1, 0.3, 1) 80ms both;
+}
+
+.brand-mark {
+  transition: color 260ms ease-out, border-color 260ms ease-out, transform 520ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.brand-mark:hover {
+  transform: rotate(-8deg) scale(1.06);
+  border-color: var(--gold-light);
+}
+
+.navbar .nav-link,
+.footer-brand,
+.text-link {
+  position: relative;
+}
+
+.navbar .nav-link::after,
+.text-link::after {
+  position: absolute;
+  right: 14px;
+  bottom: 7px;
+  left: 14px;
+  height: 1px;
+  background: var(--gold-light);
+  content: "";
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.navbar .nav-link:hover::after,
+.navbar .nav-link.active::after,
+.text-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.cart-count.is-bumping {
+  animation: badge-pop 360ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.theme-toggle.is-turning {
+  animation: theme-turn 520ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn,
+.product-gallery-thumb,
+.cart-remove,
+.theme-toggle,
+.language-select {
+  transition-property: background-color, border-color, color, box-shadow, transform;
+  transition-duration: 280ms;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn:hover,
+.product-gallery-thumb:hover {
+  transform: translateY(-2px);
+}
+
+.btn:active,
+.product-gallery-thumb:active,
+.theme-toggle:active {
+  transform: translateY(1px) scale(0.97);
+}
+
+.product-card {
+  animation: plate-rise 550ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.product-card-body > * {
+  animation: page-arrival 520ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.product-card-body > :nth-child(1) { animation-delay: 70ms; }
+.product-card-body > :nth-child(2) { animation-delay: 120ms; }
+.product-card-body > :nth-child(3) { animation-delay: 170ms; }
+.product-card-body > :nth-child(4) { animation-delay: 220ms; }
+.product-card-body > :nth-child(5) { animation-delay: 270ms; }
+
+.product-detail-image.is-switching {
+  animation: gallery-switch 380ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.product-gallery-thumb.is-active {
+  animation: brass-pulse 1.8s ease-out 1;
+}
+
+.cart-item,
+.checkout-form,
+.cart-summary,
+.filter-panel,
+.product-detail-card {
+  animation: plate-rise 580ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.cart-item:nth-child(2) { animation-delay: 70ms; }
+.cart-item:nth-child(3) { animation-delay: 140ms; }
+.cart-item:nth-child(4) { animation-delay: 210ms; }
+
+.warranty-option {
+  transition: border-color 260ms ease-out, background-color 260ms ease-out, transform 260ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.warranty-option:has(input:checked) {
+  border-color: var(--gold);
+  transform: translateX(4px);
+}
+
+.product-gallery-thumb:active {
+  animation: rivet-click 220ms ease-out;
+}
+
+.motion-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 620ms cubic-bezier(0.16, 1, 0.3, 1), transform 620ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.motion-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (max-width: 767.98px) {
   #site-header {
     max-height: 64vh;
