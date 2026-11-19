@@ -179,9 +179,10 @@ function setupTheme() {
 }
 
 async function loadData() {
+  const cacheVersion = "20261119";
   const [productsResponse, translationsResponse] = await Promise.all([
-    fetch(PRODUCTS_FILE),
-    fetch(TRANSLATIONS_FILE)
+    fetch(`${PRODUCTS_FILE}?v=${cacheVersion}`),
+    fetch(`${TRANSLATIONS_FILE}?v=${cacheVersion}`)
   ]);
   if (!productsResponse.ok || !translationsResponse.ok) {
     throw new Error("Could not load product or translation JSON.");

@@ -38,10 +38,10 @@
       "translations": {
         "en": {
           "name": "Houndsgugel",
-          "category": "Hoods & mail",
-          "description": "A pointed medieval hood with reinforced neck protection.",
-          "imageAlt": "A pointed medieval hood with reinforced neck protection.",
-          "details": "A pointed medieval hood with reinforced neck protection. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "category": "Helms & mail",
+          "description": "A medieval hood with reinforced neck and face protection.",
+          "imageAlt": "A close-fitting reconstruction combines padded cloth or leather with mobile metal panels.",
+          "details": "A close-fitting reconstruction combines padded cloth or leather with mobile metal panels.",
           "variants": [
             {
               "id": "cloth",
@@ -56,20 +56,20 @@
           ]
         },
         "de": {
-          "name": "Hundsgugel",
-          "category": "Helme und Kettenhemden",
-          "description": "Поширений у XIV–XV століттях. Хундсгугель захищав голову й шию суконним покривом, який доповнювався пізнішими кольчужними або латними пластинами.",
-          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
-          "details": "Поширений у XIV–XV століттях. Хундсгугель захищав голову й шию суконним покривом, який доповнювався пізнішими кольчужними або латними пластинами.",
+          "name": "Houndsgugel",
+          "category": "Hoods & mail",
+          "description": "Eine mittelalterliche Haube mit verstärktem Nacken- und Gesichtsschutz.",
+          "imageAlt": "Eine eng sitzende Haube verbindet gepolsterten Stoff oder Leder mit beweglichen Metallplatten.",
+          "details": "Eine eng sitzende Haube verbindet gepolsterten Stoff oder Leder mit beweglichen Metallplatten.",
           "variants": [
             {
               "id": "cloth",
-              "label": "Суконний",
+              "label": "Stoffhaube",
               "adjustment": 0
             },
             {
               "id": "reinforced",
-              "label": "Посилений металевий",
+              "label": "Verstärkte Stahlhaube",
               "adjustment": 110
             }
           ]
@@ -110,9 +110,9 @@
         "en": {
           "name": "14th-Century Plate Armour",
           "category": "Plate armour",
-          "description": "Early fourteenth-century plate armour combined with mail.",
-          "imageAlt": "Early fourteenth-century plate armour combined with mail.",
-          "details": "Early fourteenth-century plate armour combined with mail. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "description": "Early plate paired with mail for the arms and lower body.",
+          "imageAlt": "The articulated plates and padded underlayer follow a late medieval field harness.",
+          "details": "The articulated plates and padded underlayer follow a late medieval field harness.",
           "variants": [
             {
               "id": "light",
@@ -121,36 +121,36 @@
             },
             {
               "id": "field",
-              "label": "Field",
+              "label": "Field armour",
               "adjustment": 850
             },
             {
               "id": "heavy",
-              "label": "Ceremonial",
+              "label": "Ceremonial plate",
               "adjustment": 1450
             }
           ]
         },
         "de": {
-          "name": "Plattenrüstung des 14. Jahrhunderts",
+          "name": "14th-Century Plate Armour",
           "category": "Plattenrüstung",
-          "description": "Європейська перехідна броня поєднувала кольчугу з пластинами на плечах, передпліччях і стегнах. Комплект забезпечував рухливість і поступове посилення захисту.",
-          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
-          "details": "Європейська перехідна броня поєднувала кольчугу з пластинами на плечах, передпліччях і стегнах. Комплект забезпечував рухливість і поступове посилення захисту.",
+          "description": "Frühe Plattenrüstung mit Ringpanzer an Armen und Beinen.",
+          "imageAlt": "Die beweglichen Platten und gepolsterte Unterlage orientieren sich an einer spätmittelalterlichen Feldrüstung.",
+          "details": "Die beweglichen Platten und gepolsterte Unterlage orientieren sich an einer spätmittelalterlichen Feldrüstung.",
           "variants": [
             {
               "id": "light",
-              "label": "Полегшені",
+              "label": "Leicht",
               "adjustment": 0
             },
             {
               "id": "field",
-              "label": "Бойові",
+              "label": "Feldrüstung",
               "adjustment": 850
             },
             {
               "id": "heavy",
-              "label": "Важкі церемоніальні",
+              "label": "Zeremonielle Rüstung",
               "adjustment": 1450
             }
           ]
@@ -195,47 +195,47 @@
         "en": {
           "name": "Teutonic Order Armour",
           "category": "Order armour",
-          "description": "A suit inspired by 13th–15th-century Teutonic military equipment.",
-          "imageAlt": "A suit inspired by 13th–15th-century Teutonic military equipment.",
-          "details": "A suit inspired by 13th–15th-century Teutonic military equipment. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "description": "A mail and plate harness inspired by Teutonic military dress.",
+          "imageAlt": "Choose a white surcoat or dark field arrangement, both with period-style protection.",
+          "details": "Choose a white surcoat or dark field arrangement, both with period-style protection.",
           "variants": [
             {
               "id": "surcoat",
-              "label": "Surcoat",
+              "label": "White surcoat",
               "adjustment": 0
             },
             {
               "id": "war",
-              "label": "Field armour",
+              "label": "Dark field armour",
               "adjustment": 640
             },
             {
               "id": "grandmaster",
-              "label": "Grand Master",
+              "label": "Grand Master harness",
               "adjustment": 1800
             }
           ]
         },
         "de": {
-          "name": "Rüstung des Deutschen Ordens",
+          "name": "Teutonic Order Armour",
           "category": "Ordensrüstung",
-          "description": "Озброєння натхнене обладунком лицарів Тевтонського ордену. Кольчуга, пластинчасті захисти й шолом доповнюються характерним орденським гербом.",
-          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
-          "details": "Озброєння натхнене обладунком лицарів Тевтонського ордену. Кольчуга, пластинчасті захисти й шолом доповнюються характерним орденським гербом.",
+          "description": "Ringpanzer und Plattenrüstung nach Vorbild des Deutschen Ordens.",
+          "imageAlt": "Wähle einen weißen Waffenrock oder dunkle Feldrüstung mit historischem Schutz.",
+          "details": "Wähle einen weißen Waffenrock oder dunkle Feldrüstung mit historischem Schutz.",
           "variants": [
             {
               "id": "surcoat",
-              "label": "З білим сюркоатом",
+              "label": "Weißer Waffenrock",
               "adjustment": 0
             },
             {
               "id": "war",
-              "label": "Бойовий чорний",
+              "label": "Dunkle Feldrüstung",
               "adjustment": 640
             },
             {
               "id": "grandmaster",
-              "label": "Великий магістр",
+              "label": "Rüstung des Hochmeisters",
               "adjustment": 1800
             }
           ]
@@ -281,9 +281,9 @@
         "en": {
           "name": "Gothic Plate Armour",
           "category": "Gothic armour",
-          "description": "Fully articulated late Gothic plate harness.",
-          "imageAlt": "Fully articulated late Gothic plate harness.",
-          "details": "Fully articulated late Gothic plate harness. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "description": "Late fifteenth-century armour with fluted plates and a tapered silhouette.",
+          "imageAlt": "The tourney, field and ceremonial forms use articulated, overlapping plates.",
+          "details": "The tourney, field and ceremonial forms use articulated, overlapping plates.",
           "variants": [
             {
               "id": "tournament",
@@ -292,7 +292,7 @@
             },
             {
               "id": "field",
-              "label": "Field",
+              "label": "Field armour",
               "adjustment": 950
             },
             {
@@ -303,25 +303,25 @@
           ]
         },
         "de": {
-          "name": "Gotische Rüstung",
+          "name": "Gothic Plate Armour",
           "category": "Gotische Rüstung",
-          "description": "Готичний повний обладунок відрізняє заострений силует, ребристі поверхні та гармонійне шарування пластин. Варіанти підходять для турнірів, штурмів або параду.",
-          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
-          "details": "Готичний повний обладунок відрізняє заострений силует, ребристі поверхні та гармонійне шарування пластин. Варіанти підходять для турнірів, штурмів або параду.",
+          "description": "Spätgotische Rüstung des 15. Jahrhunderts mit gerippten Platten und schlanker Silhouette.",
+          "imageAlt": "Turnier-, Feld- und Prunkformen nutzen beweglich verbundene, überlappende Platten.",
+          "details": "Turnier-, Feld- und Prunkformen nutzen beweglich verbundene, überlappende Platten.",
           "variants": [
             {
               "id": "tournament",
-              "label": "Турнірні",
+              "label": "Turnier",
               "adjustment": 0
             },
             {
               "id": "field",
-              "label": "Польові",
+              "label": "Feldrüstung",
               "adjustment": 950
             },
             {
               "id": "plain",
-              "label": "Уніфіковані",
+              "label": "Einfacher Harnisch",
               "adjustment": 1800
             }
           ]
@@ -366,9 +366,9 @@
         "en": {
           "name": "Plate Horse Barding",
           "category": "Horse armour",
-          "description": "A complete medieval steel armour set for a horse.",
-          "imageAlt": "A complete medieval steel armour set for a horse.",
-          "details": "A complete medieval steel armour set for a horse. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "description": "A complete medieval steel protection set for a horse.",
+          "imageAlt": "Protective plates cover the chest, neck and hindquarters over a padded lining.",
+          "details": "Protective plates cover the chest, neck and hindquarters over a padded lining.",
           "variants": [
             {
               "id": "training",
@@ -388,25 +388,25 @@
           ]
         },
         "de": {
-          "name": "Pferderüstung",
+          "name": "Plate Horse Barding",
           "category": "Pferderüstung",
-          "description": "Кінна пластинчаста броня захищала голову, тулуб і зад коня під час бою й параду. Демпферна підкладка зменшує навантаження на рухомі частини.",
-          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
-          "details": "Кінна пластинчаста броня захищала голову, тулуб і зад коня під час бою й параду. Демпферна підкладка зменшує навантаження на рухомі частини.",
+          "description": "Eine vollständige mittelalterliche Stahlpanzerung für Pferde.",
+          "imageAlt": "Panzerplatten schützen Brust, Hals und Hinterteil über gepolsterter Unterlage.",
+          "details": "Panzerplatten schützen Brust, Hals und Hinterteil über gepolsterter Unterlage.",
           "variants": [
             {
               "id": "training",
-              "label": "Тренувальний",
+              "label": "Training",
               "adjustment": 0
             },
             {
               "id": "joust",
-              "label": "Рицарський турнірний",
+              "label": "Turnier",
               "adjustment": 1550
             },
             {
               "id": "ceremonial",
-              "label": "Церемоніальний",
+              "label": "Zeremoniell",
               "adjustment": 2200
             }
           ]
@@ -450,9 +450,9 @@
         "en": {
           "name": "Grossmesser",
           "category": "One-handed swords",
-          "description": "Late medieval European single-edged sword.",
-          "imageAlt": "Late medieval European single-edged sword.",
-          "details": "Late medieval European single-edged sword. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "description": "A late medieval single-edged cutting and thrusting sword.",
+          "imageAlt": "The robust blade and enclosed hilt recall Central European craft traditions.",
+          "details": "The robust blade and enclosed hilt recall Central European craft traditions.",
           "variants": [
             {
               "id": "short",
@@ -472,25 +472,25 @@
           ]
         },
         "de": {
-          "name": "Großmesser",
+          "name": "Grossmesser",
           "category": "Einhandwaffen",
-          "description": "Гроссмессер — центральноєвропейська пізньосередньовічна зброя, що поєднує клинок ножа й частини конструкції довгого меча.",
-          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
-          "details": "Гроссмессер — центральноєвропейська пізньосередньовічна зброя, що поєднує клинок ножа й частини конструкції довгого меча.",
+          "description": "Ein spätmittelalterliches einschneidiges Hieb- und Stichmesser.",
+          "imageAlt": "Klinge und Griff erinnern an mitteleuropäische Handwerks- und Waffenformen.",
+          "details": "Klinge und Griff erinnern an mitteleuropäische Handwerks- und Waffenformen.",
           "variants": [
             {
               "id": "short",
-              "label": "Короткий",
+              "label": "Kurz",
               "adjustment": 0
             },
             {
               "id": "standard",
-              "label": "Стандартний",
+              "label": "Standard",
               "adjustment": 260
             },
             {
               "id": "langmess",
-              "label": "Лангмессер",
+              "label": "Langmesser",
               "adjustment": 520
             }
           ]
@@ -536,9 +536,9 @@
         "en": {
           "name": "Zweihänder",
           "category": "Two-handed swords",
-          "description": "A Renaissance two-handed sword with straight or waved blade.",
-          "imageAlt": "A Renaissance two-handed sword with straight or waved blade.",
-          "details": "A Renaissance two-handed sword with straight or waved blade. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "description": "A large Renaissance sword associated with the Landsknechte.",
+          "imageAlt": "Choose a straight blade or wavy flamberge with reinforced parrying lugs.",
+          "details": "Choose a straight blade or wavy flamberge with reinforced parrying lugs.",
           "variants": [
             {
               "id": "straight",
@@ -560,23 +560,23 @@
         "de": {
           "name": "Zweihänder",
           "category": "Zweihänder",
-          "description": "Цвайгендер використовували Landsknechte XVI століття. Подовжений клинок і защічки дозволяли утримувати зброю та контролювати вороже списове строї.",
-          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
-          "details": "Цвайгендер використовували Landsknechte XVI століття. Подовжений клинок і защічки дозволяли утримувати зброю та контролювати вороже списове строї.",
+          "description": "Ein großer Renaissance-Degen der Landsknechte.",
+          "imageAlt": "Wähle eine gerade oder gewellte Flamberge-Klinge mit verstärkten Parierstangen.",
+          "details": "Wähle eine gerade oder gewellte Flamberge-Klinge mit verstärkten Parierstangen.",
           "variants": [
             {
               "id": "straight",
-              "label": "Прямий клинок",
+              "label": "Gerade Klinge",
               "adjustment": 0
             },
             {
               "id": "flamberg",
-              "label": "Фламберг",
+              "label": "Flamberg",
               "adjustment": 850
             },
             {
               "id": "greatsword",
-              "label": "Цвайхендер",
+              "label": "Großer Zweihänder",
               "adjustment": 560
             }
           ]
@@ -621,9 +621,9 @@
         "en": {
           "name": "Ahlspiess",
           "category": "Long thrusting weapons",
-          "description": "A slender late-medieval thrusting spear.",
-          "imageAlt": "A slender late-medieval thrusting spear.",
-          "details": "A slender late-medieval thrusting spear. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "description": "A slender late-medieval thrusting weapon for armoured targets.",
+          "imageAlt": "The square-section shaft concentrates force into a narrow hardened tip.",
+          "details": "The square-section shaft concentrates force into a narrow hardened tip.",
           "variants": [
             {
               "id": "late",
@@ -632,26 +632,26 @@
             },
             {
               "id": "reinforced",
-              "label": "Reinforced steel",
+              "label": "Reinforced",
               "adjustment": 180
             }
           ]
         },
         "de": {
-          "name": "Ahlspieß",
+          "name": "Ahlspiess",
           "category": "Stangenwaffen",
-          "description": "Альшпіс чи ахшпіс застосовували для пробивання кольчуги й пластин у XIV–XV століттях завдяки вузькому загостреному клинку.",
-          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
-          "details": "Альшпіс чи ахшпіс застосовували для пробивання кольчуги й пластин у XIV–XV століттях завдяки вузькому загостреному клинку.",
+          "description": "Eine schlanke spätmittelalterliche Stichwaffe gegen gepanzerte Ziele.",
+          "imageAlt": "Der kantige Schaft konzentriert die Kraft auf eine schmale gehärtete Spitze.",
+          "details": "Der kantige Schaft konzentriert die Kraft auf eine schmale gehärtete Spitze.",
           "variants": [
             {
               "id": "late",
-              "label": "Пізньосередньовічний",
+              "label": "Spätmittelalterlich",
               "adjustment": 0
             },
             {
               "id": "reinforced",
-              "label": "Посилений",
+              "label": "Verstärkt",
               "adjustment": 180
             }
           ]
@@ -692,9 +692,9 @@
         "en": {
           "name": "Halberd",
           "category": "Polearms",
-          "description": "A historical polearm with axe, hook and spike.",
-          "imageAlt": "A historical polearm with axe, hook and spike.",
-          "details": "A historical polearm with axe, hook and spike. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "description": "A versatile polearm combining an axe, hook and armour-piercing spike.",
+          "imageAlt": "Choose the head for infantry drills, cavalry use or ceremonial display.",
+          "details": "Choose the head for infantry drills, cavalry use or ceremonial display.",
           "variants": [
             {
               "id": "axe",
@@ -719,30 +719,30 @@
           ]
         },
         "de": {
-          "name": "Hellebarde",
+          "name": "Halberd",
           "category": "Stangenwaffen",
-          "description": "Алебарда поєднувала сокиру, крюк і піку для бою проти піхоти й вершників. Змінний наголовний модуль змінює баланс і призначення.",
-          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
-          "details": "Алебарда поєднувала сокиру, крюк і піку для бою проти піхоти й вершників. Змінний наголовний модуль змінює баланс і призначення.",
+          "description": "Eine vielseitige Stangenwaffe mit Beilklinge, Haken und Stichspitze.",
+          "imageAlt": "Wähle das Kopfstück für Infanterie, Reiterei oder Zeremonie.",
+          "details": "Wähle das Kopfstück für Infanterie, Reiterei oder Zeremonie.",
           "variants": [
             {
               "id": "axe",
-              "label": "Сокирне наголів’я",
+              "label": "Beilklinge",
               "adjustment": 0
             },
             {
               "id": "hook",
-              "label": "Гачкове наголів’я",
+              "label": "Hakenkopf",
               "adjustment": 120
             },
             {
               "id": "spike",
-              "label": "Колюче наголів’я",
+              "label": "Spitzkopf",
               "adjustment": 140
             },
             {
               "id": "ceremonial",
-              "label": "Церемоніальне",
+              "label": "Zeremoniell",
               "adjustment": 350
             }
           ]
@@ -793,9 +793,9 @@
         "en": {
           "name": "Crossbow",
           "category": "Crossbows",
-          "description": "A late-medieval mechanical crossbow.",
-          "imageAlt": "A late-medieval mechanical crossbow.",
-          "details": "A late-medieval mechanical crossbow. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "description": "A late-medieval mechanical crossbow as a display or demonstration piece.",
+          "imageAlt": "The inert shop versions have no shooting string or ammunition.",
+          "details": "The inert shop versions have no shooting string or ammunition.",
           "variants": [
             {
               "id": "wood",
@@ -815,25 +815,25 @@
           ]
         },
         "de": {
-          "name": "Armbrust",
+          "name": "Crossbow",
           "category": "Armbrüste",
-          "description": "Арбалет використовували в Європі для полювання й облоги. У магазині доступні інертні та декоративні моделі без боєприпасів.",
-          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
-          "details": "Арбалет використовували в Європі для полювання й облоги. У магазині доступні інертні та декоративні моделі без боєприпасів.",
+          "description": "Eine spätmittelalterliche mechanische Armbrust als Schaustück oder Demonstrationsmodell.",
+          "imageAlt": "Die Ausstellungsmodelle besitzen keine Abschusssehne und keine Munition.",
+          "details": "Die Ausstellungsmodelle besitzen keine Abschusssehne und keine Munition.",
           "variants": [
             {
               "id": "wood",
-              "label": "Дерев’яний лук",
+              "label": "Holzbogen",
               "adjustment": 0
             },
             {
               "id": "steel",
-              "label": "Сталевий лук",
+              "label": "Stahlbogen",
               "adjustment": 780
             },
             {
               "id": "display",
-              "label": "Парадний макет",
+              "label": "Ausstellungsmodell",
               "adjustment": -120
             }
           ]
@@ -879,9 +879,9 @@
         "en": {
           "name": "Bastard Sword",
           "category": "Swords",
-          "description": "A one-and-a-half-hand historical sword.",
-          "imageAlt": "A one-and-a-half-hand historical sword.",
-          "details": "A one-and-a-half-hand historical sword. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "description": "A hand-and-a-half sword suited to one or two-handed use.",
+          "imageAlt": "The extended grip offers control in defence and reach in attack.",
+          "details": "The extended grip offers control in defence and reach in attack.",
           "variants": [
             {
               "id": "narrow",
@@ -901,25 +901,25 @@
           ]
         },
         "de": {
-          "name": "Anderthalbhänder",
-          "category": "Zweihänder",
-          "description": "Полуторний меч або bastard sword був універсальним: ним били й однією рукою зі щитом, й двома для потужних ударів.",
-          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
-          "details": "Полуторний меч або bastard sword був універсальним: ним били й однією рукою зі щитом, й двома для потужних ударів.",
+          "name": "Bastard Sword",
+          "category": "Schwerter",
+          "description": "Ein Anderthalbhänder für einhändige oder zweihändige Führung.",
+          "imageAlt": "Der verlängerte Griff ermöglicht Kontrolle in der Verteidigung und Reichweite im Angriff.",
+          "details": "Der verlängerte Griff ermöglicht Kontrolle in der Verteidigung und Reichweite im Angriff.",
           "variants": [
             {
               "id": "narrow",
-              "label": "Вузький клинок",
+              "label": "Schmale Klinge",
               "adjustment": 0
             },
             {
               "id": "armoured",
-              "label": "Посилений клинок",
+              "label": "Verstärkte Klinge",
               "adjustment": 350
             },
             {
               "id": "ceremonial",
-              "label": "Церемоніальний",
+              "label": "Zeremonielle Klinge",
               "adjustment": 520
             }
           ]
@@ -965,9 +965,9 @@
         "en": {
           "name": "Pkp 17 “Eisenhans” Exoskeleton",
           "category": "Wotan Panzerwerkstatt",
-          "description": "A dieselpunk exoskeleton for logistics and assault.",
-          "imageAlt": "A dieselpunk exoskeleton for logistics and assault.",
-          "details": "A dieselpunk exoskeleton for logistics and assault. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "description": "A compact person armour frame for lifting and close assault.",
+          "imageAlt": "Pkp means Personenkampfpanzerung, with reinforced hydraulics in a dieselpunk frame.",
+          "details": "Pkp means Personenkampfpanzerung, with reinforced hydraulics in a dieselpunk frame.",
           "variants": [
             {
               "id": "cargo",
@@ -989,23 +989,23 @@
         "de": {
           "name": "Pkp 17 „Eisenhans“ Exoskelett",
           "category": "Wotan Panzerwerkstatt",
-          "description": "Pkp — Personenkampfpanzerung. Eisenhans має посилений каркас, ручні гідроприводи й броньовані панелі для підняття вантажів і підтримки пересування.",
-          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
-          "details": "Pkp — Personenkampfpanzerung. Eisenhans має посилений каркас, ручні гідроприводи й броньовані панелі для підняття вантажів і підтримки пересування.",
+          "description": "Eine kompakte Personenkampfpanzerung für Hebearbeiten und Nahangriff.",
+          "imageAlt": "Pkp bedeutet Personenkampfpanzerung mit verstärkter Hydraulik im dieselpunkigen Rahmen.",
+          "details": "Pkp bedeutet Personenkampfpanzerung mit verstärkter Hydraulik im dieselpunkigen Rahmen.",
           "variants": [
             {
               "id": "cargo",
-              "label": "Вантажний",
+              "label": "Last",
               "adjustment": 0
             },
             {
               "id": "assault",
-              "label": "Штурмовий",
+              "label": "Sturm",
               "adjustment": 2600
             },
             {
               "id": "recon",
-              "label": "Розвідний",
+              "label": "Aufklärung",
               "adjustment": 1850
             }
           ]
@@ -1053,9 +1053,9 @@
         "en": {
           "name": "Sd. KS 49 “Grimbart”",
           "category": "Wotan Panzerwerkstatt",
-          "description": "A light dieselpunk anti-infantry walker.",
-          "imageAlt": "A light dieselpunk anti-infantry walker.",
-          "details": "A light dieselpunk anti-infantry walker. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "description": "A light Sonder Kampfschreiter for patrol and reconnaissance.",
+          "imageAlt": "Sd. KS means Sonder Kampfschreiter: fast movement, light armour and compact firepower.",
+          "details": "Sd. KS means Sonder Kampfschreiter: fast movement, light armour and compact firepower.",
           "variants": [
             {
               "id": "infantry",
@@ -1077,23 +1077,23 @@
         "de": {
           "name": "Sd. KS 49 „Grimbart“",
           "category": "Wotan Panzerwerkstatt",
-          "description": "Sd. KS — Sonder Kampfschreiter. Grimbart — легкий розвідувальний бойовий пристрій із нарізною кулеметною системою, тонким бронепоясом і високою маневровістю.",
-          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
-          "details": "Sd. KS — Sonder Kampfschreiter. Grimbart — легкий розвідувальний бойовий пристрій із нарізною кулеметною системою, тонким бронепоясом і високою маневровістю.",
+          "description": "Ein leichter Sonder-Kampfschreiter für Patrouille und Aufklärung.",
+          "imageAlt": "Sd. KS bedeutet Sonder Kampfschreiter: hohe Beweglichkeit und kompakte Feuerkraft.",
+          "details": "Sd. KS bedeutet Sonder Kampfschreiter: hohe Beweglichkeit und kompakte Feuerkraft.",
           "variants": [
             {
               "id": "infantry",
-              "label": "Протипіхотний",
+              "label": "Infanterieabwehr",
               "adjustment": 0
             },
             {
               "id": "scout",
-              "label": "Розвідник",
+              "label": "Aufklärung",
               "adjustment": 3200
             },
             {
               "id": "patrol",
-              "label": "Патрульний",
+              "label": "Patrouille",
               "adjustment": 1800
             }
           ]
@@ -1139,9 +1139,9 @@
         "en": {
           "name": "Sd. KS 78 “Isegrim”",
           "category": "Wotan Panzerwerkstatt",
-          "description": "A light dieselpunk anti-mech walker.",
-          "imageAlt": "A light dieselpunk anti-mech walker.",
-          "details": "A light dieselpunk anti-mech walker. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "description": "A light anti-mech Sonder Kampfschreiter with stabilised weapons.",
+          "imageAlt": "Sd. KS means Sonder Kampfschreiter, built for flanking and counter-armour action.",
+          "details": "Sd. KS means Sonder Kampfschreiter, built for flanking and counter-armour action.",
           "variants": [
             {
               "id": "antimech",
@@ -1155,7 +1155,7 @@
             },
             {
               "id": "siege",
-              "label": "Siege",
+              "label": "Breaker",
               "adjustment": 9500
             }
           ]
@@ -1163,23 +1163,23 @@
         "de": {
           "name": "Sd. KS 78 „Isegrim“",
           "category": "Wotan Panzerwerkstatt",
-          "description": "Sd. KS 78 Isegrim — легкий Sonder Kampfschreiter для антимехового бою. Озброєний довгоствольною гарматою, боковими фланкерними щитами й стабілізацією.",
-          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
-          "details": "Sd. KS 78 Isegrim — легкий Sonder Kampfschreiter для антимехового бою. Озброєний довгоствольною гарматою, боковими фланкерними щитами й стабілізацією.",
+          "description": "Ein leichter mechapwehrender Sonder-Kampfschreiter mit stabilisierter Bewaffnung.",
+          "imageAlt": "Sd. KS bedeutet Sonder Kampfschreiter für Flankenangriffe und Panzerabwehr.",
+          "details": "Sd. KS bedeutet Sonder Kampfschreiter für Flankenangriffe und Panzerabwehr.",
           "variants": [
             {
               "id": "antimech",
-              "label": "Протимеховий",
+              "label": "Mechabwehr",
               "adjustment": 0
             },
             {
               "id": "flanker",
-              "label": "Фланкер",
+              "label": "Flankierer",
               "adjustment": 6800
             },
             {
               "id": "siege",
-              "label": "Проривний",
+              "label": "Durchbruch",
               "adjustment": 9500
             }
           ]
@@ -1225,9 +1225,9 @@
         "en": {
           "name": "SKS 156 “Wotan”",
           "category": "Wotan Panzerwerkstatt",
-          "description": "A heavy dieselpunk anti-mech assault walker.",
-          "imageAlt": "A heavy dieselpunk anti-mech assault walker.",
-          "details": "A heavy dieselpunk anti-mech assault walker. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "description": "A heavy Kampfschreiter built for fortifications and mech combat.",
+          "imageAlt": "SKS means Schwerer Kampfschreiter, with layered armour and frontal firepower.",
+          "details": "SKS means Schwerer Kampfschreiter, with layered armour and frontal firepower.",
           "variants": [
             {
               "id": "bastion",
@@ -1249,23 +1249,23 @@
         "de": {
           "name": "SKS 156 „Wotan“",
           "category": "Wotan Panzerwerkstatt",
-          "description": "SKS — Schwerer Kampfschreiter. Wotan призначений для штурму укріплених позицій і антимехових операцій: далекобійна гармата й ближня косова система.",
-          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
-          "details": "SKS — Schwerer Kampfschreiter. Wotan призначений для штурму укріплених позицій і антимехових операцій: далекобійна гармата й ближня косова система.",
+          "description": "Ein schwerer Kampfschreiter für Befestigungen und Mechgefechte.",
+          "imageAlt": "SKS bedeutet Schwerer Kampfschreiter mit mehrlagiger Panzerung und schwerer Frontbewaffnung.",
+          "details": "SKS bedeutet Schwerer Kampfschreiter mit mehrlagiger Panzerung und schwerer Frontbewaffnung.",
           "variants": [
             {
               "id": "bastion",
-              "label": "Фортецьний",
+              "label": "Bastion",
               "adjustment": 0
             },
             {
               "id": "siege",
-              "label": "Штурмовий",
+              "label": "Belagerung",
               "adjustment": 11000
             },
             {
               "id": "command",
-              "label": "Командний",
+              "label": "Führung",
               "adjustment": 14500
             }
           ]
@@ -1310,9 +1310,9 @@
         "en": {
           "name": "SKS-300 “Kaiser”",
           "category": "Wotan Panzerwerkstatt",
-          "description": "An enormous dieselpunk super-heavy walking fortress.",
-          "imageAlt": "An enormous dieselpunk super-heavy walking fortress.",
-          "details": "An enormous dieselpunk super-heavy walking fortress. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "description": "A super-heavy mobile fortress of the Kampfschreiter line.",
+          "imageAlt": "SKS means Schwerer Kampfschreiter: immense armour, walking engines and multi-turret firepower.",
+          "details": "SKS means Schwerer Kampfschreiter: immense armour, walking engines and multi-turret firepower.",
           "variants": [
             {
               "id": "fortress",
@@ -1326,7 +1326,7 @@
             },
             {
               "id": "command",
-              "label": "Command",
+              "label": "Supreme command",
               "adjustment": 28000
             }
           ]
@@ -1334,23 +1334,23 @@
         "de": {
           "name": "SKS-300 „Kaiser“",
           "category": "Wotan Panzerwerkstatt",
-          "description": "SKS-300 Kaiser — вершина лінійки Schwerer Kampfschreiter. Величезні опори, багатошарова броня й центральний реактор забезпечують максимальну вогневу потужність.",
-          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
-          "details": "SKS-300 Kaiser — вершина лінійки Schwerer Kampfschreiter. Величезні опори, багатошарова броня й центральний реактор забезпечують максимальну вогневу потужність.",
+          "description": "Eine überschwere mobile Festung der Kampfschreiter-Reihe.",
+          "imageAlt": "SKS bedeutet Schwerer Kampfschreiter mit gewaltiger Panzerung und Mehrturmbewaffnung.",
+          "details": "SKS bedeutet Schwerer Kampfschreiter mit gewaltiger Panzerung und Mehrturmbewaffnung.",
           "variants": [
             {
               "id": "fortress",
-              "label": "Мобільна фортеця",
+              "label": "Mobile Festung",
               "adjustment": 0
             },
             {
               "id": "rail",
-              "label": "Підсилений залізний корпус",
+              "label": "Gepanzerte Schiene",
               "adjustment": 19000
             },
             {
               "id": "command",
-              "label": "Верховний командний",
+              "label": "Oberkommando",
               "adjustment": 28000
             }
           ]
