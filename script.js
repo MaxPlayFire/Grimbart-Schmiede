@@ -54,8 +54,14 @@ function formatPrice(amount) {
   return `${number} ${t("currency")}`;
 }
 
-// Generate a short mechanical sound with the Web Audio API; no audio files are required.
-function playCouponSound(soundName) {
+// Play the WAV assigned to a coupon. A simple synthesized fallback remains for older coupons.
+function playCouponSound(coupon) {
+  if (coupon.soundFile) {
+    const audio = new Audio(coupon.soundFile);
+    audio.volume = 0.7;
+    audio.play().catch(() => {});
+    return;
+  }
   const AudioContext = window.AudioContext || window.webkitAudioContext;
   if (!AudioContext) return;
   const context = new AudioContext();
@@ -66,8 +72,8 @@ function playCouponSound(soundName) {
     steam: [180, 95, 0.16],
     forge: [110, 55, 0.22]
   };
-  const [from, to, duration] = settings[soundName] || settings.forge;
-  oscillator.type = soundName === "steam" ? "triangle" : "square";
+  const [from, to, duration] = settings[coupon.sound] || settings.forge;
+  oscillator.type = coupon.sound === "steam" ? "triangle" : "square";
   oscillator.frequency.setValueAtTime(from, context.currentTime);
   oscillator.frequency.exponentialRampToValueAtTime(to, context.currentTime + duration);
   gain.gain.setValueAtTime(0.045, context.currentTime);
@@ -523,7 +529,7 @@ function renderCart() {
     const code = couponInput.value.trim().toUpperCase();
     if (shopData.coupons[code]) {
       localStorage.setItem("grimbart-coupon", code);
-      playCouponSound(shopData.coupons[code].sound); // Each coupon has a small mechanical sound signature.
+      playCouponSound(shopData.coupons[code]); // Play the coupon's WAV or a small synthesized fallback.
     } else {
       localStorage.removeItem("grimbart-coupon");
     }

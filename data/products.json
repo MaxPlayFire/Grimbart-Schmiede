@@ -7,11 +7,13 @@
   "coupons": {
     "KAIZER10": {
       "percent": 10,
-      "sound": "brass"
+      "sound": "brass",
+      "soundFile": "static/audio/KAIZER10.wav"
     },
     "GRIMBART5": {
       "percent": 5,
-      "sound": "steam"
+      "sound": "steam",
+      "soundFile": "static/audio/GRIMBART5.wav"
     },
     "IRON10": {
       "percent": 10,
@@ -29,7 +31,7 @@
       "image": "static/images/products/hundsgugel-1.jpeg",
       "images": [
         "static/images/products/hundsgugel-1.jpeg",
-        "static/images/products/Armor_MET_DP272454.jpg"
+        "static/images/products/hundsgugel-2.jpeg"
       ],
       "imageAlt": "A pointed medieval hood with reinforced neck protection.",
       "warrantyPrice": 90,
@@ -99,7 +101,8 @@
       "image": "static/images/products/laty-14-stolittja-1.jpg",
       "images": [
         "static/images/products/laty-14-stolittja-1.jpg",
-        "static/images/products/Armor_MET_DP272454.jpg"
+        "static/images/products/laty-14-stolittja-2.jpeg",
+        "static/images/products/laty-14-stolittja-3.jpg"
       ],
       "imageAlt": "Early fourteenth-century plate armour combined with mail.",
       "warrantyPrice": 150,
@@ -181,10 +184,10 @@
       "price": 7800,
       "description": "Військовий комплект у стилі XIII–XV століть із білим сюркоатом і чорним хрестом.",
       "popular": 98,
-      "image": "static/images/products/teutonijskij-orden-1.webp",
+      "image": "static/images/products/teutonijskij-orden-1.jpg",
       "images": [
-        "static/images/products/teutonijskij-orden-1.webp",
-        "static/images/products/Armor_MET_DP272454.jpg"
+        "static/images/products/teutonijskij-orden-1.jpg",
+        "static/images/products/teutonijskij-orden-2.jpeg"
       ],
       "imageAlt": "A suit inspired by 13th–15th-century Teutonic military equipment.",
       "warrantyPrice": 210,
@@ -270,7 +273,7 @@
       "images": [
         "static/images/products/goticki-laty-1.jpg",
         "static/images/products/goticki-laty-2.jpg",
-        "static/images/products/Armor_MET_DP272454.jpg"
+        "static/images/products/goticki-laty-3.jpg"
       ],
       "imageAlt": "Fully articulated late Gothic plate harness.",
       "warrantyPrice": 270,
@@ -352,11 +355,10 @@
       "price": 11500,
       "description": "Комплект захисту коня: нагрудник, нахвостник, налобник і нашийник.",
       "popular": 96,
-      "image": "static/images/products/Lviv_-_Arsenal_-_07.jpg",
+      "image": "static/images/products/Horse_suit_of_armor_DSC02189.jpg",
       "images": [
-        "static/images/products/Lviv_-_Arsenal_-_07.jpg",
-        "static/images/products/Armor_MET_DP272454.jpg",
-        "static/images/products/hh1jgblt92721.jpg"
+        "static/images/products/Horse_suit_of_armor_DSC02189.jpg",
+        "static/images/products/Dresden-Zwinger-Armoury-Armor.02.jpg"
       ],
       "imageAlt": "A complete medieval steel armour set for a horse.",
       "warrantyPrice": 330,
@@ -440,8 +442,7 @@
       "popular": 95,
       "image": "static/images/products/grossmesser-1.jpg",
       "images": [
-        "static/images/products/grossmesser-1.jpg",
-        "static/images/products/4d25e0bd7e3a6503d1e18b036673c945.jpg"
+        "static/images/products/grossmesser-1.jpg"
       ],
       "imageAlt": "Late medieval European single-edged sword.",
       "warrantyPrice": 90,
@@ -523,11 +524,11 @@
       "price": 3800,
       "description": "Монументальний дворучний меч із довгим клинком і двома парарисками.",
       "popular": 94,
-      "image": "static/images/products/grossmesser-1.jpg",
+      "image": "static/images/products/Zweihander-1.jpeg",
       "images": [
-        "static/images/products/grossmesser-1.jpg",
-        "static/images/products/4d25e0bd7e3a6503d1e18b036673c945.jpg",
-        "static/images/products/Sax_mech_gatling.webp"
+        "static/images/products/Zweihander-1.jpeg",
+        "static/images/products/Zweihander-2.jpg",
+        "static/images/products/Zweihander-3.jpg"
       ],
       "imageAlt": "A Renaissance two-handed sword with straight or waved blade.",
       "warrantyPrice": 150,
@@ -612,7 +613,7 @@
       "image": "static/images/products/ahlspis-1.webp",
       "images": [
         "static/images/products/ahlspis-1.webp",
-        "static/images/products/Lviv_-_Arsenal_-_07.jpg"
+        "static/images/products/ahlspis-2.jpeg"
       ],
       "imageAlt": "A slender late-medieval thrusting spear.",
       "warrantyPrice": 210,
@@ -679,11 +680,11 @@
       "price": 2400,
       "description": "Довге наголів’я з сокирою, гаком або шипом.",
       "popular": 92,
-      "image": "static/images/products/hh1jgblt92721.jpg",
+      "image": "static/images/products/alebarda-1.jpg",
       "images": [
-        "static/images/products/hh1jgblt92721.jpg",
-        "static/images/products/Lviv_-_Arsenal_-_07.jpg",
-        "static/images/products/images.jpeg"
+        "static/images/products/alebarda-1.jpg",
+        "static/images/products/alebarda-2.jpeg",
+        "static/images/products/alebarda-3.webp"
       ],
       "imageAlt": "A historical polearm with axe, hook and spike.",
       "warrantyPrice": 270,
@@ -780,11 +781,11 @@
       "price": 5200,
       "description": "Тяжкий арбалет із дерев’яним або сталевим луком і механічним зведенням.",
       "popular": 91,
-      "image": "static/images/products/5755528_original.jpg",
+      "image": "static/images/products/arbalet-1.jpg",
       "images": [
-        "static/images/products/5755528_original.jpg",
-        "static/images/products/images.jpeg",
-        "static/images/products/завантаження.jpeg"
+        "static/images/products/arbalet-1.jpg",
+        "static/images/products/arbalet-2.jpg",
+        "static/images/products/arbalet-3.jpg"
       ],
       "imageAlt": "A late-medieval mechanical crossbow.",
       "warrantyPrice": 330,
@@ -866,10 +867,11 @@
       "price": 2750,
       "description": "Універсальний меч із подовженим руків’ям для однієї чи двох рук.",
       "popular": 90,
-      "image": "static/images/products/grossmesser-1.jpg",
+      "image": "static/images/products/Zweihander-1.jpeg",
       "images": [
-        "static/images/products/grossmesser-1.jpg",
-        "static/images/products/4d25e0bd7e3a6503d1e18b036673c945.jpg"
+        "static/images/products/Zweihander-1.jpeg",
+        "static/images/products/Zweihander-2.jpg",
+        "static/images/products/Zweihander-3.jpg"
       ],
       "imageAlt": "A one-and-a-half-hand historical sword.",
       "warrantyPrice": 90,
@@ -1040,8 +1042,10 @@
       "image": "static/images/products/sd-ks-49-grimbart-1.webp",
       "images": [
         "static/images/products/sd-ks-49-grimbart-1.webp",
-        "static/images/products/Saxon_Wolves.webp",
-        "static/images/products/Sax_mech_gatling.webp"
+        "static/images/products/sd-ks-49-grimbart-2.webp",
+        "static/images/products/sd-ks-49-grimbart-3.webp",
+        "static/images/products/sd-ks-49-grimbart-4.webp",
+        "static/images/products/sd-ks-49-grimbart-5.webp"
       ],
       "imageAlt": "A light dieselpunk anti-infantry walker.",
       "warrantyPrice": 210,
@@ -1126,8 +1130,8 @@
       "image": "static/images/products/sd-ks-78-isegrim-1.webp",
       "images": [
         "static/images/products/sd-ks-78-isegrim-1.webp",
-        "static/images/products/IronHarvest_Screenshot_09.webp",
-        "static/images/products/Saxon_Wolves.webp"
+        "static/images/products/sd-ks-78-isegrim-2.webp",
+        "static/images/products/sd-ks-78-isegrim-3.webp"
       ],
       "imageAlt": "A light dieselpunk anti-mech walker.",
       "warrantyPrice": 270,
@@ -1212,8 +1216,8 @@
       "image": "static/images/products/sks-156-wotan-1.webp",
       "images": [
         "static/images/products/sks-156-wotan-1.webp",
-        "static/images/products/A_Walk_Through_the_Woods.webp",
-        "static/images/products/Far_From_the_Frontline.webp"
+        "static/images/products/sks-156-wotan-2.webp",
+        "static/images/products/sks-156-wotan-3.webp"
       ],
       "imageAlt": "A heavy dieselpunk anti-mech assault walker.",
       "warrantyPrice": 330,
@@ -1298,8 +1302,7 @@
       "image": "static/images/products/sks-300-kaiser-1.webp",
       "images": [
         "static/images/products/sks-300-kaiser-1.webp",
-        "static/images/products/Jakub-rozalski-1920-true-fishermans.webp",
-        "static/images/products/Far_From_the_Frontline.webp"
+        "static/images/products/sks-300-kaiser-2.webp"
       ],
       "imageAlt": "An enormous dieselpunk super-heavy walking fortress.",
       "warrantyPrice": 90,
