@@ -79,12 +79,20 @@ body::before {
   transition: background-color 520ms ease-out, background-image 520ms ease-out;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
 h1,
 h2,
-h3,
+h3 {
+  font-family: "Great Vibes", cursive;
+}
+
 .navbar-brand,
-.footer-brand {
-  font-family: Georgia, "Times New Roman", serif;
+.footer-brand,
+.product-card .product-title,
+.product-detail-layout h1,
+.hero-banner h1 {
+  font-family: "Great Vibes", cursive;
 }
 
 .site-navbar {
@@ -859,6 +867,32 @@ h3,
 .product-detail-card h1 {
   color: var(--ink);
   font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+/* The product gallery keeps several workshop views visible below the main image. */
+.product-gallery-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.product-gallery-thumb {
+  overflow: hidden;
+  padding: 3px;
+  border: 1px solid var(--line);
+  background: var(--panel-raised);
+}
+
+.product-gallery-thumb.is-active {
+  border-color: var(--gold);
+}
+
+.product-gallery-thumb img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.4 / 1;
+  object-fit: cover;
 }
 
 .product-detail-image {

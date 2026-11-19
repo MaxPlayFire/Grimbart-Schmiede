@@ -6,7 +6,7 @@ function doPost(event) {
         !order.customer.address || !Array.isArray(order.items) || order.items.length === 0) {
       throw new Error("Missing required order fields.");
     }
-    if (order.coupon && order.coupon !== "IRON10") {
+    if (order.coupon && ["KAIZER10", "GRIMBART5", "IRON10"].indexOf(order.coupon) === -1) {
       throw new Error("Unknown coupon.");
     }
 

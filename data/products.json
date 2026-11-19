@@ -5,273 +5,1373 @@
     "symbol": "д."
   },
   "coupons": {
+    "KAIZER10": {
+      "percent": 10,
+      "sound": "brass"
+    },
+    "GRIMBART5": {
+      "percent": 5,
+      "sound": "steam"
+    },
     "IRON10": {
-      "percent": 10
+      "percent": 10,
+      "sound": "forge"
     }
   },
   "products": [
     {
-      "id": "wall-candlestick",
-      "name": "Настінний свічник «Ворон»",
-      "category": "Для дому",
-      "price": 180,
-      "description": "Кований настінний свічник із гачком для підвішування та загнутим підсвічником.",
+      "id": "hundsgugel",
+      "name": "Хундсгугель",
+      "category": "Шоломи та кольчуги",
+      "price": 680,
+      "description": "Гостроверхий суконний або шкіряний головний убір із металевою оборонною вставкою.",
+      "popular": 100,
+      "image": "static/images/products/hundsgugel-1.jpeg",
+      "images": [
+        "static/images/products/hundsgugel-1.jpeg",
+        "static/images/products/Armor_MET_DP272454.jpg"
+      ],
+      "imageAlt": "A pointed medieval hood with reinforced neck protection.",
+      "warrantyPrice": 90,
+      "translations": {
+        "en": {
+          "name": "Houndsgugel",
+          "category": "Hoods & mail",
+          "description": "A pointed medieval hood with reinforced neck protection.",
+          "imageAlt": "A pointed medieval hood with reinforced neck protection.",
+          "details": "A pointed medieval hood with reinforced neck protection. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "variants": [
+            {
+              "id": "cloth",
+              "label": "Cloth hood",
+              "adjustment": 0
+            },
+            {
+              "id": "reinforced",
+              "label": "Reinforced steel",
+              "adjustment": 110
+            }
+          ]
+        },
+        "de": {
+          "name": "Hundsgugel",
+          "category": "Helme und Kettenhemden",
+          "description": "Поширений у XIV–XV століттях. Хундсгугель захищав голову й шию суконним покривом, який доповнювався пізнішими кольчужними або латними пластинами.",
+          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
+          "details": "Поширений у XIV–XV століттях. Хундсгугель захищав голову й шию суконним покривом, який доповнювався пізнішими кольчужними або латними пластинами.",
+          "variants": [
+            {
+              "id": "cloth",
+              "label": "Суконний",
+              "adjustment": 0
+            },
+            {
+              "id": "reinforced",
+              "label": "Посилений металевий",
+              "adjustment": 110
+            }
+          ]
+        }
+      },
+      "translationsUk": {
+        "details": "Поширений у XIV–XV століттях. Хундсгугель захищав голову й шию суконним покривом, який доповнювався пізнішими кольчужними або латними пластинами.",
+        "variants": [
+          {
+            "id": "cloth",
+            "label": "Суконний",
+            "adjustment": 0
+          },
+          {
+            "id": "reinforced",
+            "label": "Посилений металевий",
+            "adjustment": 110
+          }
+        ]
+      }
+    },
+    {
+      "id": "plate-14",
+      "name": "Лати XIV століття",
+      "category": "Пластинчаста броня",
+      "price": 9200,
+      "description": "Рання повнотазна пластинчаста броня XIV століття для пішого бою.",
+      "popular": 99,
+      "image": "static/images/products/laty-14-stolittja-1.jpg",
+      "images": [
+        "static/images/products/laty-14-stolittja-1.jpg",
+        "static/images/products/Armor_MET_DP272454.jpg"
+      ],
+      "imageAlt": "Early fourteenth-century plate armour combined with mail.",
+      "warrantyPrice": 150,
+      "translations": {
+        "en": {
+          "name": "14th-Century Plate Armour",
+          "category": "Plate armour",
+          "description": "Early fourteenth-century plate armour combined with mail.",
+          "imageAlt": "Early fourteenth-century plate armour combined with mail.",
+          "details": "Early fourteenth-century plate armour combined with mail. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "variants": [
+            {
+              "id": "light",
+              "label": "Light",
+              "adjustment": 0
+            },
+            {
+              "id": "field",
+              "label": "Field",
+              "adjustment": 850
+            },
+            {
+              "id": "heavy",
+              "label": "Ceremonial",
+              "adjustment": 1450
+            }
+          ]
+        },
+        "de": {
+          "name": "Plattenrüstung des 14. Jahrhunderts",
+          "category": "Plattenrüstung",
+          "description": "Європейська перехідна броня поєднувала кольчугу з пластинами на плечах, передпліччях і стегнах. Комплект забезпечував рухливість і поступове посилення захисту.",
+          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
+          "details": "Європейська перехідна броня поєднувала кольчугу з пластинами на плечах, передпліччях і стегнах. Комплект забезпечував рухливість і поступове посилення захисту.",
+          "variants": [
+            {
+              "id": "light",
+              "label": "Полегшені",
+              "adjustment": 0
+            },
+            {
+              "id": "field",
+              "label": "Бойові",
+              "adjustment": 850
+            },
+            {
+              "id": "heavy",
+              "label": "Важкі церемоніальні",
+              "adjustment": 1450
+            }
+          ]
+        }
+      },
+      "translationsUk": {
+        "details": "Європейська перехідна броня поєднувала кольчугу з пластинами на плечах, передпліччях і стегнах. Комплект забезпечував рухливість і поступове посилення захисту.",
+        "variants": [
+          {
+            "id": "light",
+            "label": "Полегшені",
+            "adjustment": 0
+          },
+          {
+            "id": "field",
+            "label": "Бойові",
+            "adjustment": 850
+          },
+          {
+            "id": "heavy",
+            "label": "Важкі церемоніальні",
+            "adjustment": 1450
+          }
+        ]
+      }
+    },
+    {
+      "id": "teutonic",
+      "name": "Броня Тевтонського ордену",
+      "category": "Орденська броня",
+      "price": 7800,
+      "description": "Військовий комплект у стилі XIII–XV століть із білим сюркоатом і чорним хрестом.",
       "popular": 98,
-      "image": "static/images/Grimbart.webp",
-      "imageAlt": "Механічний ходок у сталевій броні",
-      "warrantyPrice": 35,
+      "image": "static/images/products/teutonijskij-orden-1.webp",
+      "images": [
+        "static/images/products/teutonijskij-orden-1.webp",
+        "static/images/products/Armor_MET_DP272454.jpg"
+      ],
+      "imageAlt": "A suit inspired by 13th–15th-century Teutonic military equipment.",
+      "warrantyPrice": 210,
       "translations": {
         "en": {
-          "name": "Raven Wall Candleholder",
-          "category": "For the home",
-          "description": "A hand-forged wall candleholder with a hanging hook and a curved candle cup.",
-          "imageAlt": "Steel-armoured mechanical walker",
-          "details": "A sturdy hand-forged candleholder made for a workshop, entryway or reading nook. Each piece is finished by hand.",
-          "variants": [{"id":"compact","label":"Compact","adjustment":-20},{"id":"standard","label":"Standard","adjustment":0},{"id":"grand","label":"Grand","adjustment":45}]
+          "name": "Teutonic Order Armour",
+          "category": "Order armour",
+          "description": "A suit inspired by 13th–15th-century Teutonic military equipment.",
+          "imageAlt": "A suit inspired by 13th–15th-century Teutonic military equipment.",
+          "details": "A suit inspired by 13th–15th-century Teutonic military equipment. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "variants": [
+            {
+              "id": "surcoat",
+              "label": "Surcoat",
+              "adjustment": 0
+            },
+            {
+              "id": "war",
+              "label": "Field armour",
+              "adjustment": 640
+            },
+            {
+              "id": "grandmaster",
+              "label": "Grand Master",
+              "adjustment": 1800
+            }
+          ]
         },
         "de": {
-          "name": "Wandkerzenhalter „Rabe“",
-          "category": "Fürs Zuhause",
-          "description": "Handgeschmiedeter Wandkerzenhalter mit Aufhängehaken und geschwungenem Kerzenteller.",
-          "imageAlt": "Mechanischer Läufer in Stahlpanzerung",
-          "details": "Ein robuster, handgeschmiedeter Kerzenhalter für Werkstatt, Eingangsbereich oder Leseecke. Jedes Stück wird von Hand vollendet.",
-          "variants": [{"id":"compact","label":"Kompakt","adjustment":-20},{"id":"standard","label":"Standard","adjustment":0},{"id":"grand","label":"Groß","adjustment":45}]
+          "name": "Rüstung des Deutschen Ordens",
+          "category": "Ordensrüstung",
+          "description": "Озброєння натхнене обладунком лицарів Тевтонського ордену. Кольчуга, пластинчасті захисти й шолом доповнюються характерним орденським гербом.",
+          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
+          "details": "Озброєння натхнене обладунком лицарів Тевтонського ордену. Кольчуга, пластинчасті захисти й шолом доповнюються характерним орденським гербом.",
+          "variants": [
+            {
+              "id": "surcoat",
+              "label": "З білим сюркоатом",
+              "adjustment": 0
+            },
+            {
+              "id": "war",
+              "label": "Бойовий чорний",
+              "adjustment": 640
+            },
+            {
+              "id": "grandmaster",
+              "label": "Великий магістр",
+              "adjustment": 1800
+            }
+          ]
         }
       },
       "translationsUk": {
-        "details": "Міцний свічник ручного кування для майстерні, передпокою чи куточка для читання. Кожен виріб доведено вручну.",
-        "variants": [{"id":"compact","label":"Компактний","adjustment":-20},{"id":"standard","label":"Стандартний","adjustment":0},{"id":"grand","label":"Великий","adjustment":45}]
+        "details": "Озброєння натхнене обладунком лицарів Тевтонського ордену. Кольчуга, пластинчасті захисти й шолом доповнюються характерним орденським гербом.",
+        "variants": [
+          {
+            "id": "surcoat",
+            "label": "З білим сюркоатом",
+            "adjustment": 0
+          },
+          {
+            "id": "war",
+            "label": "Бойовий чорний",
+            "adjustment": 640
+          },
+          {
+            "id": "grandmaster",
+            "label": "Великий магістр",
+            "adjustment": 1800
+          }
+        ]
       }
     },
     {
-      "id": "hand-forged-knife",
-      "name": "Ніж ремісника",
-      "category": "Інструменти",
-      "price": 420,
-      "description": "Універсальний ніж із кованим сталевим лезом і дерев'яним руків'ям.",
+      "id": "gothic",
+      "name": "Готичні лати",
+      "category": "Готична броня",
+      "price": 12500,
+      "description": "Повний комплект пізньоготичного XV–XVI століття з рифленими пластинами.",
+      "popular": 97,
+      "image": "static/images/products/goticki-laty-1.jpg",
+      "images": [
+        "static/images/products/goticki-laty-1.jpg",
+        "static/images/products/goticki-laty-2.jpg",
+        "static/images/products/Armor_MET_DP272454.jpg"
+      ],
+      "imageAlt": "Fully articulated late Gothic plate harness.",
+      "warrantyPrice": 270,
+      "translations": {
+        "en": {
+          "name": "Gothic Plate Armour",
+          "category": "Gothic armour",
+          "description": "Fully articulated late Gothic plate harness.",
+          "imageAlt": "Fully articulated late Gothic plate harness.",
+          "details": "Fully articulated late Gothic plate harness. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "variants": [
+            {
+              "id": "tournament",
+              "label": "Tournament",
+              "adjustment": 0
+            },
+            {
+              "id": "field",
+              "label": "Field",
+              "adjustment": 950
+            },
+            {
+              "id": "plain",
+              "label": "Plain harness",
+              "adjustment": 1800
+            }
+          ]
+        },
+        "de": {
+          "name": "Gotische Rüstung",
+          "category": "Gotische Rüstung",
+          "description": "Готичний повний обладунок відрізняє заострений силует, ребристі поверхні та гармонійне шарування пластин. Варіанти підходять для турнірів, штурмів або параду.",
+          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
+          "details": "Готичний повний обладунок відрізняє заострений силует, ребристі поверхні та гармонійне шарування пластин. Варіанти підходять для турнірів, штурмів або параду.",
+          "variants": [
+            {
+              "id": "tournament",
+              "label": "Турнірні",
+              "adjustment": 0
+            },
+            {
+              "id": "field",
+              "label": "Польові",
+              "adjustment": 950
+            },
+            {
+              "id": "plain",
+              "label": "Уніфіковані",
+              "adjustment": 1800
+            }
+          ]
+        }
+      },
+      "translationsUk": {
+        "details": "Готичний повний обладунок відрізняє заострений силует, ребристі поверхні та гармонійне шарування пластин. Варіанти підходять для турнірів, штурмів або параду.",
+        "variants": [
+          {
+            "id": "tournament",
+            "label": "Турнірні",
+            "adjustment": 0
+          },
+          {
+            "id": "field",
+            "label": "Польові",
+            "adjustment": 950
+          },
+          {
+            "id": "plain",
+            "label": "Уніфіковані",
+            "adjustment": 1800
+          }
+        ]
+      }
+    },
+    {
+      "id": "horse-bard",
+      "name": "Латний бард для коня",
+      "category": "Кінна броня",
+      "price": 11500,
+      "description": "Комплект захисту коня: нагрудник, нахвостник, налобник і нашийник.",
+      "popular": 96,
+      "image": "static/images/products/Lviv_-_Arsenal_-_07.jpg",
+      "images": [
+        "static/images/products/Lviv_-_Arsenal_-_07.jpg",
+        "static/images/products/Armor_MET_DP272454.jpg",
+        "static/images/products/hh1jgblt92721.jpg"
+      ],
+      "imageAlt": "A complete medieval steel armour set for a horse.",
+      "warrantyPrice": 330,
+      "translations": {
+        "en": {
+          "name": "Plate Horse Barding",
+          "category": "Horse armour",
+          "description": "A complete medieval steel armour set for a horse.",
+          "imageAlt": "A complete medieval steel armour set for a horse.",
+          "details": "A complete medieval steel armour set for a horse. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "variants": [
+            {
+              "id": "training",
+              "label": "Training",
+              "adjustment": 0
+            },
+            {
+              "id": "joust",
+              "label": "Jousting",
+              "adjustment": 1550
+            },
+            {
+              "id": "ceremonial",
+              "label": "Ceremonial",
+              "adjustment": 2200
+            }
+          ]
+        },
+        "de": {
+          "name": "Pferderüstung",
+          "category": "Pferderüstung",
+          "description": "Кінна пластинчаста броня захищала голову, тулуб і зад коня під час бою й параду. Демпферна підкладка зменшує навантаження на рухомі частини.",
+          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
+          "details": "Кінна пластинчаста броня захищала голову, тулуб і зад коня під час бою й параду. Демпферна підкладка зменшує навантаження на рухомі частини.",
+          "variants": [
+            {
+              "id": "training",
+              "label": "Тренувальний",
+              "adjustment": 0
+            },
+            {
+              "id": "joust",
+              "label": "Рицарський турнірний",
+              "adjustment": 1550
+            },
+            {
+              "id": "ceremonial",
+              "label": "Церемоніальний",
+              "adjustment": 2200
+            }
+          ]
+        }
+      },
+      "translationsUk": {
+        "details": "Кінна пластинчаста броня захищала голову, тулуб і зад коня під час бою й параду. Демпферна підкладка зменшує навантаження на рухомі частини.",
+        "variants": [
+          {
+            "id": "training",
+            "label": "Тренувальний",
+            "adjustment": 0
+          },
+          {
+            "id": "joust",
+            "label": "Рицарський турнірний",
+            "adjustment": 1550
+          },
+          {
+            "id": "ceremonial",
+            "label": "Церемоніальний",
+            "adjustment": 2200
+          }
+        ]
+      }
+    },
+    {
+      "id": "grossmesser",
+      "name": "Гроссмессер",
+      "category": "Одноручна зброя",
+      "price": 2100,
+      "description": "Одноручний клинок із однолезою бульбою та укріпленим руків’ям.",
+      "popular": 95,
+      "image": "static/images/products/grossmesser-1.jpg",
+      "images": [
+        "static/images/products/grossmesser-1.jpg",
+        "static/images/products/4d25e0bd7e3a6503d1e18b036673c945.jpg"
+      ],
+      "imageAlt": "Late medieval European single-edged sword.",
+      "warrantyPrice": 90,
+      "translations": {
+        "en": {
+          "name": "Grossmesser",
+          "category": "One-handed swords",
+          "description": "Late medieval European single-edged sword.",
+          "imageAlt": "Late medieval European single-edged sword.",
+          "details": "Late medieval European single-edged sword. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "variants": [
+            {
+              "id": "short",
+              "label": "Short",
+              "adjustment": 0
+            },
+            {
+              "id": "standard",
+              "label": "Standard",
+              "adjustment": 260
+            },
+            {
+              "id": "langmess",
+              "label": "Langmesser",
+              "adjustment": 520
+            }
+          ]
+        },
+        "de": {
+          "name": "Großmesser",
+          "category": "Einhandwaffen",
+          "description": "Гроссмессер — центральноєвропейська пізньосередньовічна зброя, що поєднує клинок ножа й частини конструкції довгого меча.",
+          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
+          "details": "Гроссмессер — центральноєвропейська пізньосередньовічна зброя, що поєднує клинок ножа й частини конструкції довгого меча.",
+          "variants": [
+            {
+              "id": "short",
+              "label": "Короткий",
+              "adjustment": 0
+            },
+            {
+              "id": "standard",
+              "label": "Стандартний",
+              "adjustment": 260
+            },
+            {
+              "id": "langmess",
+              "label": "Лангмессер",
+              "adjustment": 520
+            }
+          ]
+        }
+      },
+      "translationsUk": {
+        "details": "Гроссмессер — центральноєвропейська пізньосередньовічна зброя, що поєднує клинок ножа й частини конструкції довгого меча.",
+        "variants": [
+          {
+            "id": "short",
+            "label": "Короткий",
+            "adjustment": 0
+          },
+          {
+            "id": "standard",
+            "label": "Стандартний",
+            "adjustment": 260
+          },
+          {
+            "id": "langmess",
+            "label": "Лангмессер",
+            "adjustment": 520
+          }
+        ]
+      }
+    },
+    {
+      "id": "zweihander",
+      "name": "Цвайгендер",
+      "category": "Дворучна зброя",
+      "price": 3800,
+      "description": "Монументальний дворучний меч із довгим клинком і двома парарисками.",
       "popular": 94,
-      "image": "static/images/Sax_mech_gatling.webp",
-      "imageAlt": "Броньована машина майстерні",
-      "warrantyPrice": 55,
+      "image": "static/images/products/grossmesser-1.jpg",
+      "images": [
+        "static/images/products/grossmesser-1.jpg",
+        "static/images/products/4d25e0bd7e3a6503d1e18b036673c945.jpg",
+        "static/images/products/Sax_mech_gatling.webp"
+      ],
+      "imageAlt": "A Renaissance two-handed sword with straight or waved blade.",
+      "warrantyPrice": 150,
       "translations": {
         "en": {
-          "name": "Craftsman's Knife",
-          "category": "Tools",
-          "description": "A versatile knife with a forged steel blade and wooden handle.",
-          "imageAlt": "Armoured workshop machine",
-          "details": "A dependable everyday knife with a forged steel blade and shaped wooden handle. Made for practical work and long service.",
-          "variants": [{"id":"short","label":"Short blade","adjustment":0},{"id":"standard","label":"Standard blade","adjustment":35}]
+          "name": "Zweihänder",
+          "category": "Two-handed swords",
+          "description": "A Renaissance two-handed sword with straight or waved blade.",
+          "imageAlt": "A Renaissance two-handed sword with straight or waved blade.",
+          "details": "A Renaissance two-handed sword with straight or waved blade. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "variants": [
+            {
+              "id": "straight",
+              "label": "Straight blade",
+              "adjustment": 0
+            },
+            {
+              "id": "flamberg",
+              "label": "Flamberg",
+              "adjustment": 850
+            },
+            {
+              "id": "greatsword",
+              "label": "Greatsword",
+              "adjustment": 560
+            }
+          ]
         },
         "de": {
-          "name": "Handwerker-Messer",
-          "category": "Werkzeuge",
-          "description": "Ein vielseitiges Messer mit geschmiedeter Stahlklinge und Holzgriff.",
-          "imageAlt": "Gepanzerte Werkstattmaschine",
-          "details": "Ein zuverlässiges Alltagsmesser mit geschmiedeter Stahlklinge und geformtem Holzgriff. Für praktische Arbeit und lange Nutzung gefertigt.",
-          "variants": [{"id":"short","label":"Kurze Klinge","adjustment":0},{"id":"standard","label":"Standardklinge","adjustment":35}]
+          "name": "Zweihänder",
+          "category": "Zweihänder",
+          "description": "Цвайгендер використовували Landsknechte XVI століття. Подовжений клинок і защічки дозволяли утримувати зброю та контролювати вороже списове строї.",
+          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
+          "details": "Цвайгендер використовували Landsknechte XVI століття. Подовжений клинок і защічки дозволяли утримувати зброю та контролювати вороже списове строї.",
+          "variants": [
+            {
+              "id": "straight",
+              "label": "Прямий клинок",
+              "adjustment": 0
+            },
+            {
+              "id": "flamberg",
+              "label": "Фламберг",
+              "adjustment": 850
+            },
+            {
+              "id": "greatsword",
+              "label": "Цвайхендер",
+              "adjustment": 560
+            }
+          ]
         }
       },
       "translationsUk": {
-        "details": "Надійний ніж на щодень із кованим сталевим лезом і зручним дерев'яним руків'ям. Створений для роботи й довгої служби.",
-        "variants": [{"id":"short","label":"Коротке лезо","adjustment":0},{"id":"standard","label":"Стандартне лезо","adjustment":35}]
+        "details": "Цвайгендер використовували Landsknechte XVI століття. Подовжений клинок і защічки дозволяли утримувати зброю та контролювати вороже списове строї.",
+        "variants": [
+          {
+            "id": "straight",
+            "label": "Прямий клинок",
+            "adjustment": 0
+          },
+          {
+            "id": "flamberg",
+            "label": "Фламберг",
+            "adjustment": 850
+          },
+          {
+            "id": "greatsword",
+            "label": "Цвайхендер",
+            "adjustment": 560
+          }
+        ]
       }
     },
     {
-      "id": "horse-shoe",
-      "name": "Підкова кована",
-      "category": "Кінська збруя",
-      "price": 260,
-      "description": "Міцна підкова ручного кування з чотирма отворами для цвяхів.",
+      "id": "ahlspiess",
+      "name": "Альшпіс",
+      "category": "Традиційна зброя",
+      "price": 1600,
+      "description": "Довга ударна зброя з тонким клинком і квадратним перерізом.",
+      "popular": 93,
+      "image": "static/images/products/ahlspis-1.webp",
+      "images": [
+        "static/images/products/ahlspis-1.webp",
+        "static/images/products/Lviv_-_Arsenal_-_07.jpg"
+      ],
+      "imageAlt": "A slender late-medieval thrusting spear.",
+      "warrantyPrice": 210,
+      "translations": {
+        "en": {
+          "name": "Ahlspiess",
+          "category": "Long thrusting weapons",
+          "description": "A slender late-medieval thrusting spear.",
+          "imageAlt": "A slender late-medieval thrusting spear.",
+          "details": "A slender late-medieval thrusting spear. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "variants": [
+            {
+              "id": "late",
+              "label": "Late medieval",
+              "adjustment": 0
+            },
+            {
+              "id": "reinforced",
+              "label": "Reinforced steel",
+              "adjustment": 180
+            }
+          ]
+        },
+        "de": {
+          "name": "Ahlspieß",
+          "category": "Stangenwaffen",
+          "description": "Альшпіс чи ахшпіс застосовували для пробивання кольчуги й пластин у XIV–XV століттях завдяки вузькому загостреному клинку.",
+          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
+          "details": "Альшпіс чи ахшпіс застосовували для пробивання кольчуги й пластин у XIV–XV століттях завдяки вузькому загостреному клинку.",
+          "variants": [
+            {
+              "id": "late",
+              "label": "Пізньосередньовічний",
+              "adjustment": 0
+            },
+            {
+              "id": "reinforced",
+              "label": "Посилений",
+              "adjustment": 180
+            }
+          ]
+        }
+      },
+      "translationsUk": {
+        "details": "Альшпіс чи ахшпіс застосовували для пробивання кольчуги й пластин у XIV–XV століттях завдяки вузькому загостреному клинку.",
+        "variants": [
+          {
+            "id": "late",
+            "label": "Пізньосередньовічний",
+            "adjustment": 0
+          },
+          {
+            "id": "reinforced",
+            "label": "Посилений",
+            "adjustment": 180
+          }
+        ]
+      }
+    },
+    {
+      "id": "halberd",
+      "name": "Алебарда",
+      "category": "Традиційна зброя",
+      "price": 2400,
+      "description": "Довге наголів’я з сокирою, гаком або шипом.",
+      "popular": 92,
+      "image": "static/images/products/hh1jgblt92721.jpg",
+      "images": [
+        "static/images/products/hh1jgblt92721.jpg",
+        "static/images/products/Lviv_-_Arsenal_-_07.jpg",
+        "static/images/products/images.jpeg"
+      ],
+      "imageAlt": "A historical polearm with axe, hook and spike.",
+      "warrantyPrice": 270,
+      "translations": {
+        "en": {
+          "name": "Halberd",
+          "category": "Polearms",
+          "description": "A historical polearm with axe, hook and spike.",
+          "imageAlt": "A historical polearm with axe, hook and spike.",
+          "details": "A historical polearm with axe, hook and spike. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "variants": [
+            {
+              "id": "axe",
+              "label": "Axe head",
+              "adjustment": 0
+            },
+            {
+              "id": "hook",
+              "label": "Hook head",
+              "adjustment": 120
+            },
+            {
+              "id": "spike",
+              "label": "Spike head",
+              "adjustment": 140
+            },
+            {
+              "id": "ceremonial",
+              "label": "Ceremonial",
+              "adjustment": 350
+            }
+          ]
+        },
+        "de": {
+          "name": "Hellebarde",
+          "category": "Stangenwaffen",
+          "description": "Алебарда поєднувала сокиру, крюк і піку для бою проти піхоти й вершників. Змінний наголовний модуль змінює баланс і призначення.",
+          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
+          "details": "Алебарда поєднувала сокиру, крюк і піку для бою проти піхоти й вершників. Змінний наголовний модуль змінює баланс і призначення.",
+          "variants": [
+            {
+              "id": "axe",
+              "label": "Сокирне наголів’я",
+              "adjustment": 0
+            },
+            {
+              "id": "hook",
+              "label": "Гачкове наголів’я",
+              "adjustment": 120
+            },
+            {
+              "id": "spike",
+              "label": "Колюче наголів’я",
+              "adjustment": 140
+            },
+            {
+              "id": "ceremonial",
+              "label": "Церемоніальне",
+              "adjustment": 350
+            }
+          ]
+        }
+      },
+      "translationsUk": {
+        "details": "Алебарда поєднувала сокиру, крюк і піку для бою проти піхоти й вершників. Змінний наголовний модуль змінює баланс і призначення.",
+        "variants": [
+          {
+            "id": "axe",
+            "label": "Сокирне наголів’я",
+            "adjustment": 0
+          },
+          {
+            "id": "hook",
+            "label": "Гачкове наголів’я",
+            "adjustment": 120
+          },
+          {
+            "id": "spike",
+            "label": "Колюче наголів’я",
+            "adjustment": 140
+          },
+          {
+            "id": "ceremonial",
+            "label": "Церемоніальне",
+            "adjustment": 350
+          }
+        ]
+      }
+    },
+    {
+      "id": "crossbow",
+      "name": "Арбалет",
+      "category": "Стрілецька зброя",
+      "price": 5200,
+      "description": "Тяжкий арбалет із дерев’яним або сталевим луком і механічним зведенням.",
+      "popular": 91,
+      "image": "static/images/products/5755528_original.jpg",
+      "images": [
+        "static/images/products/5755528_original.jpg",
+        "static/images/products/images.jpeg",
+        "static/images/products/завантаження.jpeg"
+      ],
+      "imageAlt": "A late-medieval mechanical crossbow.",
+      "warrantyPrice": 330,
+      "translations": {
+        "en": {
+          "name": "Crossbow",
+          "category": "Crossbows",
+          "description": "A late-medieval mechanical crossbow.",
+          "imageAlt": "A late-medieval mechanical crossbow.",
+          "details": "A late-medieval mechanical crossbow. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "variants": [
+            {
+              "id": "wood",
+              "label": "Wooden bow",
+              "adjustment": 0
+            },
+            {
+              "id": "steel",
+              "label": "Steel bow",
+              "adjustment": 780
+            },
+            {
+              "id": "display",
+              "label": "Display model",
+              "adjustment": -120
+            }
+          ]
+        },
+        "de": {
+          "name": "Armbrust",
+          "category": "Armbrüste",
+          "description": "Арбалет використовували в Європі для полювання й облоги. У магазині доступні інертні та декоративні моделі без боєприпасів.",
+          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
+          "details": "Арбалет використовували в Європі для полювання й облоги. У магазині доступні інертні та декоративні моделі без боєприпасів.",
+          "variants": [
+            {
+              "id": "wood",
+              "label": "Дерев’яний лук",
+              "adjustment": 0
+            },
+            {
+              "id": "steel",
+              "label": "Сталевий лук",
+              "adjustment": 780
+            },
+            {
+              "id": "display",
+              "label": "Парадний макет",
+              "adjustment": -120
+            }
+          ]
+        }
+      },
+      "translationsUk": {
+        "details": "Арбалет використовували в Європі для полювання й облоги. У магазині доступні інертні та декоративні моделі без боєприпасів.",
+        "variants": [
+          {
+            "id": "wood",
+            "label": "Дерев’яний лук",
+            "adjustment": 0
+          },
+          {
+            "id": "steel",
+            "label": "Сталевий лук",
+            "adjustment": 780
+          },
+          {
+            "id": "display",
+            "label": "Парадний макет",
+            "adjustment": -120
+          }
+        ]
+      }
+    },
+    {
+      "id": "bastard-sword",
+      "name": "Полуторний меч",
+      "category": "Дворучна зброя",
+      "price": 2750,
+      "description": "Універсальний меч із подовженим руків’ям для однієї чи двох рук.",
       "popular": 90,
-      "image": "static/images/Jakub-rozalski-1920-true-fishermans.webp",
-      "imageAlt": "Механічний велет на північному тракті",
-      "warrantyPrice": 40,
+      "image": "static/images/products/grossmesser-1.jpg",
+      "images": [
+        "static/images/products/grossmesser-1.jpg",
+        "static/images/products/4d25e0bd7e3a6503d1e18b036673c945.jpg"
+      ],
+      "imageAlt": "A one-and-a-half-hand historical sword.",
+      "warrantyPrice": 90,
       "translations": {
         "en": {
-          "name": "Hand-Forged Horseshoe",
-          "category": "Horse tack",
-          "description": "A durable hand-forged horseshoe with four nail holes.",
-          "imageAlt": "Mechanical giant on the northern trail",
-          "details": "A durable, hand-forged horseshoe with four nail holes, shaped for reliable everyday use.",
-          "variants": [{"id":"small","label":"Small","adjustment":0},{"id":"medium","label":"Medium","adjustment":20},{"id":"large","label":"Large","adjustment":40}]
+          "name": "Bastard Sword",
+          "category": "Swords",
+          "description": "A one-and-a-half-hand historical sword.",
+          "imageAlt": "A one-and-a-half-hand historical sword.",
+          "details": "A one-and-a-half-hand historical sword. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "variants": [
+            {
+              "id": "narrow",
+              "label": "Narrow blade",
+              "adjustment": 0
+            },
+            {
+              "id": "armoured",
+              "label": "Armoured blade",
+              "adjustment": 350
+            },
+            {
+              "id": "ceremonial",
+              "label": "Ceremonial",
+              "adjustment": 520
+            }
+          ]
         },
         "de": {
-          "name": "Handgeschmiedetes Hufeisen",
-          "category": "Pferdebedarf",
-          "description": "Ein robustes, handgeschmiedetes Hufeisen mit vier Nagellöchern.",
-          "imageAlt": "Mechanischer Riese auf dem Nordweg",
-          "details": "Ein robustes, handgeschmiedetes Hufeisen mit vier Nagellöchern, geformt für den zuverlässigen täglichen Einsatz.",
-          "variants": [{"id":"small","label":"Klein","adjustment":0},{"id":"medium","label":"Mittel","adjustment":20},{"id":"large","label":"Groß","adjustment":40}]
+          "name": "Anderthalbhänder",
+          "category": "Zweihänder",
+          "description": "Полуторний меч або bastard sword був універсальним: ним били й однією рукою зі щитом, й двома для потужних ударів.",
+          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
+          "details": "Полуторний меч або bastard sword був універсальним: ним били й однією рукою зі щитом, й двома для потужних ударів.",
+          "variants": [
+            {
+              "id": "narrow",
+              "label": "Вузький клинок",
+              "adjustment": 0
+            },
+            {
+              "id": "armoured",
+              "label": "Посилений клинок",
+              "adjustment": 350
+            },
+            {
+              "id": "ceremonial",
+              "label": "Церемоніальний",
+              "adjustment": 520
+            }
+          ]
         }
       },
       "translationsUk": {
-        "details": "Міцна кована підкова з чотирма отворами для цвяхів, зроблена для надійного щоденного використання.",
-        "variants": [{"id":"small","label":"Мала","adjustment":0},{"id":"medium","label":"Середня","adjustment":20},{"id":"large","label":"Велика","adjustment":40}]
+        "details": "Полуторний меч або bastard sword був універсальним: ним били й однією рукою зі щитом, й двома для потужних ударів.",
+        "variants": [
+          {
+            "id": "narrow",
+            "label": "Вузький клинок",
+            "adjustment": 0
+          },
+          {
+            "id": "armoured",
+            "label": "Посилений клинок",
+            "adjustment": 350
+          },
+          {
+            "id": "ceremonial",
+            "label": "Церемоніальний",
+            "adjustment": 520
+          }
+        ]
       }
     },
     {
-      "id": "belt-buckle",
-      "name": "Пряжка «Дубове листя»",
-      "category": "Одяг і оздоби",
-      "price": 340,
-      "description": "Залізна пряжка з простим рослинним орнаментом, викованим вручну.",
+      "id": "pkp-17-eisenhans",
+      "name": "Екзоскелет Pkp 17 «Eisenhans»",
+      "category": "Wotan Panzerwerkstatt",
+      "price": 14800,
+      "description": "Легкий персональний екзоскелет для інженерних і штурмових операцій.",
+      "popular": 89,
+      "image": "static/images/products/pkp-17-eisenhans-1.webp",
+      "images": [
+        "static/images/products/pkp-17-eisenhans-1.webp",
+        "static/images/products/pkp-17-eisenhans-2.webp",
+        "static/images/products/pkp-17-eisenhans-3.webp"
+      ],
+      "imageAlt": "A dieselpunk exoskeleton for logistics and assault.",
+      "warrantyPrice": 150,
+      "translations": {
+        "en": {
+          "name": "Pkp 17 “Eisenhans” Exoskeleton",
+          "category": "Wotan Panzerwerkstatt",
+          "description": "A dieselpunk exoskeleton for logistics and assault.",
+          "imageAlt": "A dieselpunk exoskeleton for logistics and assault.",
+          "details": "A dieselpunk exoskeleton for logistics and assault. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "variants": [
+            {
+              "id": "cargo",
+              "label": "Cargo",
+              "adjustment": 0
+            },
+            {
+              "id": "assault",
+              "label": "Assault",
+              "adjustment": 2600
+            },
+            {
+              "id": "recon",
+              "label": "Recon",
+              "adjustment": 1850
+            }
+          ]
+        },
+        "de": {
+          "name": "Pkp 17 „Eisenhans“ Exoskelett",
+          "category": "Wotan Panzerwerkstatt",
+          "description": "Pkp — Personenkampfpanzerung. Eisenhans має посилений каркас, ручні гідроприводи й броньовані панелі для підняття вантажів і підтримки пересування.",
+          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
+          "details": "Pkp — Personenkampfpanzerung. Eisenhans має посилений каркас, ручні гідроприводи й броньовані панелі для підняття вантажів і підтримки пересування.",
+          "variants": [
+            {
+              "id": "cargo",
+              "label": "Вантажний",
+              "adjustment": 0
+            },
+            {
+              "id": "assault",
+              "label": "Штурмовий",
+              "adjustment": 2600
+            },
+            {
+              "id": "recon",
+              "label": "Розвідний",
+              "adjustment": 1850
+            }
+          ]
+        }
+      },
+      "translationsUk": {
+        "details": "Pkp — Personenkampfpanzerung. Eisenhans має посилений каркас, ручні гідроприводи й броньовані панелі для підняття вантажів і підтримки пересування.",
+        "variants": [
+          {
+            "id": "cargo",
+            "label": "Вантажний",
+            "adjustment": 0
+          },
+          {
+            "id": "assault",
+            "label": "Штурмовий",
+            "adjustment": 2600
+          },
+          {
+            "id": "recon",
+            "label": "Розвідний",
+            "adjustment": 1850
+          }
+        ]
+      }
+    },
+    {
+      "id": "sd-ks-49-grimbart",
+      "name": "Sd. KS 49 «Grimbart»",
+      "category": "Wotan Panzerwerkstatt",
+      "price": 42000,
+      "description": "Легкий двоногий мех для міських і лісових операцій проти піхоти.",
+      "popular": 88,
+      "image": "static/images/products/sd-ks-49-grimbart-1.webp",
+      "images": [
+        "static/images/products/sd-ks-49-grimbart-1.webp",
+        "static/images/products/Saxon_Wolves.webp",
+        "static/images/products/Sax_mech_gatling.webp"
+      ],
+      "imageAlt": "A light dieselpunk anti-infantry walker.",
+      "warrantyPrice": 210,
+      "translations": {
+        "en": {
+          "name": "Sd. KS 49 “Grimbart”",
+          "category": "Wotan Panzerwerkstatt",
+          "description": "A light dieselpunk anti-infantry walker.",
+          "imageAlt": "A light dieselpunk anti-infantry walker.",
+          "details": "A light dieselpunk anti-infantry walker. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "variants": [
+            {
+              "id": "infantry",
+              "label": "Anti-infantry",
+              "adjustment": 0
+            },
+            {
+              "id": "scout",
+              "label": "Scout",
+              "adjustment": 3200
+            },
+            {
+              "id": "patrol",
+              "label": "Patrol",
+              "adjustment": 1800
+            }
+          ]
+        },
+        "de": {
+          "name": "Sd. KS 49 „Grimbart“",
+          "category": "Wotan Panzerwerkstatt",
+          "description": "Sd. KS — Sonder Kampfschreiter. Grimbart — легкий розвідувальний бойовий пристрій із нарізною кулеметною системою, тонким бронепоясом і високою маневровістю.",
+          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
+          "details": "Sd. KS — Sonder Kampfschreiter. Grimbart — легкий розвідувальний бойовий пристрій із нарізною кулеметною системою, тонким бронепоясом і високою маневровістю.",
+          "variants": [
+            {
+              "id": "infantry",
+              "label": "Протипіхотний",
+              "adjustment": 0
+            },
+            {
+              "id": "scout",
+              "label": "Розвідник",
+              "adjustment": 3200
+            },
+            {
+              "id": "patrol",
+              "label": "Патрульний",
+              "adjustment": 1800
+            }
+          ]
+        }
+      },
+      "translationsUk": {
+        "details": "Sd. KS — Sonder Kampfschreiter. Grimbart — легкий розвідувальний бойовий пристрій із нарізною кулеметною системою, тонким бронепоясом і високою маневровістю.",
+        "variants": [
+          {
+            "id": "infantry",
+            "label": "Протипіхотний",
+            "adjustment": 0
+          },
+          {
+            "id": "scout",
+            "label": "Розвідник",
+            "adjustment": 3200
+          },
+          {
+            "id": "patrol",
+            "label": "Патрульний",
+            "adjustment": 1800
+          }
+        ]
+      }
+    },
+    {
+      "id": "sd-ks-78-isegrim",
+      "name": "Sd. KS 78 «Isegrim»",
+      "category": "Wotan Panzerwerkstatt",
+      "price": 61000,
+      "description": "Легкий протимеховий mech із протитанковою гарматою та швидким приводом.",
+      "popular": 87,
+      "image": "static/images/products/sd-ks-78-isegrim-1.webp",
+      "images": [
+        "static/images/products/sd-ks-78-isegrim-1.webp",
+        "static/images/products/IronHarvest_Screenshot_09.webp",
+        "static/images/products/Saxon_Wolves.webp"
+      ],
+      "imageAlt": "A light dieselpunk anti-mech walker.",
+      "warrantyPrice": 270,
+      "translations": {
+        "en": {
+          "name": "Sd. KS 78 “Isegrim”",
+          "category": "Wotan Panzerwerkstatt",
+          "description": "A light dieselpunk anti-mech walker.",
+          "imageAlt": "A light dieselpunk anti-mech walker.",
+          "details": "A light dieselpunk anti-mech walker. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "variants": [
+            {
+              "id": "antimech",
+              "label": "Anti-mech",
+              "adjustment": 0
+            },
+            {
+              "id": "flanker",
+              "label": "Flanker",
+              "adjustment": 6800
+            },
+            {
+              "id": "siege",
+              "label": "Siege",
+              "adjustment": 9500
+            }
+          ]
+        },
+        "de": {
+          "name": "Sd. KS 78 „Isegrim“",
+          "category": "Wotan Panzerwerkstatt",
+          "description": "Sd. KS 78 Isegrim — легкий Sonder Kampfschreiter для антимехового бою. Озброєний довгоствольною гарматою, боковими фланкерними щитами й стабілізацією.",
+          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
+          "details": "Sd. KS 78 Isegrim — легкий Sonder Kampfschreiter для антимехового бою. Озброєний довгоствольною гарматою, боковими фланкерними щитами й стабілізацією.",
+          "variants": [
+            {
+              "id": "antimech",
+              "label": "Протимеховий",
+              "adjustment": 0
+            },
+            {
+              "id": "flanker",
+              "label": "Фланкер",
+              "adjustment": 6800
+            },
+            {
+              "id": "siege",
+              "label": "Проривний",
+              "adjustment": 9500
+            }
+          ]
+        }
+      },
+      "translationsUk": {
+        "details": "Sd. KS 78 Isegrim — легкий Sonder Kampfschreiter для антимехового бою. Озброєний довгоствольною гарматою, боковими фланкерними щитами й стабілізацією.",
+        "variants": [
+          {
+            "id": "antimech",
+            "label": "Протимеховий",
+            "adjustment": 0
+          },
+          {
+            "id": "flanker",
+            "label": "Фланкер",
+            "adjustment": 6800
+          },
+          {
+            "id": "siege",
+            "label": "Проривний",
+            "adjustment": 9500
+          }
+        ]
+      }
+    },
+    {
+      "id": "sks-156-wotan",
+      "name": "SKS 156 «Wotan»",
+      "category": "Wotan Panzerwerkstatt",
+      "price": 98000,
+      "description": "Важкий Kampfschreiter із багатошаровою бронею, вежою і двома важкими клинками.",
+      "popular": 86,
+      "image": "static/images/products/sks-156-wotan-1.webp",
+      "images": [
+        "static/images/products/sks-156-wotan-1.webp",
+        "static/images/products/A_Walk_Through_the_Woods.webp",
+        "static/images/products/Far_From_the_Frontline.webp"
+      ],
+      "imageAlt": "A heavy dieselpunk anti-mech assault walker.",
+      "warrantyPrice": 330,
+      "translations": {
+        "en": {
+          "name": "SKS 156 “Wotan”",
+          "category": "Wotan Panzerwerkstatt",
+          "description": "A heavy dieselpunk anti-mech assault walker.",
+          "imageAlt": "A heavy dieselpunk anti-mech assault walker.",
+          "details": "A heavy dieselpunk anti-mech assault walker. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "variants": [
+            {
+              "id": "bastion",
+              "label": "Bastion",
+              "adjustment": 0
+            },
+            {
+              "id": "siege",
+              "label": "Siege",
+              "adjustment": 11000
+            },
+            {
+              "id": "command",
+              "label": "Command",
+              "adjustment": 14500
+            }
+          ]
+        },
+        "de": {
+          "name": "SKS 156 „Wotan“",
+          "category": "Wotan Panzerwerkstatt",
+          "description": "SKS — Schwerer Kampfschreiter. Wotan призначений для штурму укріплених позицій і антимехових операцій: далекобійна гармата й ближня косова система.",
+          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
+          "details": "SKS — Schwerer Kampfschreiter. Wotan призначений для штурму укріплених позицій і антимехових операцій: далекобійна гармата й ближня косова система.",
+          "variants": [
+            {
+              "id": "bastion",
+              "label": "Фортецьний",
+              "adjustment": 0
+            },
+            {
+              "id": "siege",
+              "label": "Штурмовий",
+              "adjustment": 11000
+            },
+            {
+              "id": "command",
+              "label": "Командний",
+              "adjustment": 14500
+            }
+          ]
+        }
+      },
+      "translationsUk": {
+        "details": "SKS — Schwerer Kampfschreiter. Wotan призначений для штурму укріплених позицій і антимехових операцій: далекобійна гармата й ближня косова система.",
+        "variants": [
+          {
+            "id": "bastion",
+            "label": "Фортецьний",
+            "adjustment": 0
+          },
+          {
+            "id": "siege",
+            "label": "Штурмовий",
+            "adjustment": 11000
+          },
+          {
+            "id": "command",
+            "label": "Командний",
+            "adjustment": 14500
+          }
+        ]
+      }
+    },
+    {
+      "id": "sks-300-kaiser",
+      "name": "SKS-300 «Kaiser»",
+      "category": "Wotan Panzerwerkstatt",
+      "price": 165000,
+      "description": "Надважкий мобільний форт із трьома енергоциліндрами й баштовими системами.",
       "popular": 85,
-      "image": "static/images/Grimbart.webp",
-      "imageAlt": "Крупний план сталевої броні з латунними деталями",
-      "warrantyPrice": 45,
+      "image": "static/images/products/sks-300-kaiser-1.webp",
+      "images": [
+        "static/images/products/sks-300-kaiser-1.webp",
+        "static/images/products/Jakub-rozalski-1920-true-fishermans.webp",
+        "static/images/products/Far_From_the_Frontline.webp"
+      ],
+      "imageAlt": "An enormous dieselpunk super-heavy walking fortress.",
+      "warrantyPrice": 90,
       "translations": {
         "en": {
-          "name": "Oak Leaf Belt Buckle",
-          "category": "Clothing & ornaments",
-          "description": "An iron buckle with a simple hand-forged leaf pattern.",
-          "imageAlt": "Steel armour with brass details",
-          "details": "A solid iron buckle with a restrained oak-leaf motif, forged and finished by hand.",
-          "variants": [{"id":"narrow","label":"Narrow belt","adjustment":0},{"id":"wide","label":"Wide belt","adjustment":25}]
+          "name": "SKS-300 “Kaiser”",
+          "category": "Wotan Panzerwerkstatt",
+          "description": "An enormous dieselpunk super-heavy walking fortress.",
+          "imageAlt": "An enormous dieselpunk super-heavy walking fortress.",
+          "details": "An enormous dieselpunk super-heavy walking fortress. Historical reconstruction and fictional workshop documentation are kept separate.",
+          "variants": [
+            {
+              "id": "fortress",
+              "label": "Mobile fortress",
+              "adjustment": 0
+            },
+            {
+              "id": "rail",
+              "label": "Armoured rail",
+              "adjustment": 19000
+            },
+            {
+              "id": "command",
+              "label": "Command",
+              "adjustment": 28000
+            }
+          ]
         },
         "de": {
-          "name": "Gürtelschnalle „Eichenblatt“",
-          "category": "Kleidung & Schmuck",
-          "description": "Eine Eisenschnalle mit schlichtem, handgeschmiedetem Blattmuster.",
-          "imageAlt": "Stahlpanzerung mit Messingdetails",
-          "details": "Eine stabile Eisenschnalle mit dezentem Eichenblattmotiv, von Hand geschmiedet und vollendet.",
-          "variants": [{"id":"narrow","label":"Schmaler Gürtel","adjustment":0},{"id":"wide","label":"Breiter Gürtel","adjustment":25}]
+          "name": "SKS-300 „Kaiser“",
+          "category": "Wotan Panzerwerkstatt",
+          "description": "SKS-300 Kaiser — вершина лінійки Schwerer Kampfschreiter. Величезні опори, багатошарова броня й центральний реактор забезпечують максимальну вогневу потужність.",
+          "imageAlt": "Historische Darstellung des Produkts aus der Werkstatt Grimbart",
+          "details": "SKS-300 Kaiser — вершина лінійки Schwerer Kampfschreiter. Величезні опори, багатошарова броня й центральний реактор забезпечують максимальну вогневу потужність.",
+          "variants": [
+            {
+              "id": "fortress",
+              "label": "Мобільна фортеця",
+              "adjustment": 0
+            },
+            {
+              "id": "rail",
+              "label": "Підсилений залізний корпус",
+              "adjustment": 19000
+            },
+            {
+              "id": "command",
+              "label": "Верховний командний",
+              "adjustment": 28000
+            }
+          ]
         }
       },
       "translationsUk": {
-        "details": "Міцна залізна пряжка зі стриманим мотивом дубового листя, викована й оздоблена вручну.",
-        "variants": [{"id":"narrow","label":"Вузький ремінь","adjustment":0},{"id":"wide","label":"Широкий ремінь","adjustment":25}]
-      }
-    },
-    {
-      "id": "fireplace-tongs",
-      "name": "Ковальські щипці для вогнища",
-      "category": "Для дому",
-      "price": 310,
-      "description": "Зручні щипці для догляду за жаром у домашньому вогнищі.",
-      "popular": 80,
-      "image": "static/images/Sax_mech_gatling.webp",
-      "imageAlt": "Механічна машина у сталевій броні",
-      "warrantyPrice": 50,
-      "translations": {
-        "en": {
-          "name": "Forge Fireplace Tongs",
-          "category": "For the home",
-          "description": "Comfortable tongs for tending the fire in a home hearth.",
-          "imageAlt": "Mechanical machine in steel armour",
-          "details": "Strong, balanced tongs for safely tending hot coals and keeping the hearth in order.",
-          "variants": [{"id":"short","label":"Short","adjustment":0},{"id":"long","label":"Long","adjustment":40}]
-        },
-        "de": {
-          "name": "Schmiedezange für den Kamin",
-          "category": "Fürs Zuhause",
-          "description": "Handliche Zange zur Pflege des Feuers in der heimischen Feuerstelle.",
-          "imageAlt": "Mechanische Maschine in Stahlpanzerung",
-          "details": "Eine kräftige, gut ausbalancierte Zange zum sicheren Bewegen heißer Kohlen und zur Pflege der Feuerstelle.",
-          "variants": [{"id":"short","label":"Kurz","adjustment":0},{"id":"long","label":"Lang","adjustment":40}]
-        }
-      },
-      "translationsUk": {
-        "details": "Міцні та збалансовані щипці для безпечного догляду за жаром і підтримання ладу у вогнищі.",
-        "variants": [{"id":"short","label":"Короткі","adjustment":0},{"id":"long","label":"Довгі","adjustment":40}]
-      }
-    },
-    {
-      "id": "door-hinge",
-      "name": "Завіса дверна кована",
-      "category": "Для дому",
-      "price": 230,
-      "description": "Декоративна залізна завіса для скрині, хвіртки або дверей.",
-      "popular": 76,
-      "image": "static/images/Jakub-rozalski-1920-true-fishermans.webp",
-      "imageAlt": "Механічний крокомобіль у тумані",
-      "warrantyPrice": 35,
-      "translations": {
-        "en": {
-          "name": "Hand-Forged Door Hinge",
-          "category": "For the home",
-          "description": "A decorative iron hinge for a chest, gate or door.",
-          "imageAlt": "Mechanical walker in the mist",
-          "details": "A decorative but sturdy iron hinge for chests, gates and doors, shaped to work smoothly over time.",
-          "variants": [{"id":"short","label":"Short strap","adjustment":0},{"id":"long","label":"Long strap","adjustment":30}]
-        },
-        "de": {
-          "name": "Handgeschmiedetes Türband",
-          "category": "Fürs Zuhause",
-          "description": "Ein dekoratives Eisenband für Truhe, Tor oder Tür.",
-          "imageAlt": "Mechanischer Läufer im Nebel",
-          "details": "Ein dekoratives und zugleich stabiles Eisenband für Truhen, Tore und Türen, für leichtgängige Bewegung geformt.",
-          "variants": [{"id":"short","label":"Kurzes Band","adjustment":0},{"id":"long","label":"Langes Band","adjustment":30}]
-        }
-      },
-      "translationsUk": {
-        "details": "Декоративна й водночас міцна залізна завіса для скрині, хвіртки або дверей, сформована для плавного ходу.",
-        "variants": [{"id":"short","label":"Коротка завіса","adjustment":0},{"id":"long","label":"Довга завіса","adjustment":30}]
-      }
-    },
-    {
-      "id": "iron-fibula",
-      "name": "Фібула «Сонячний вузол»",
-      "category": "Одяг і оздоби",
-      "price": 390,
-      "description": "Кована застібка-фібула для плаща з лаконічним вузловим візерунком.",
-      "popular": 72,
-      "image": "static/images/Grimbart.webp",
-      "imageAlt": "Деталі кованої сталі та латуні",
-      "warrantyPrice": 50,
-      "translations": {
-        "en": {
-          "name": "Sun Knot Iron Fibula",
-          "category": "Clothing & ornaments",
-          "description": "A hand-forged cloak pin with a clean knot pattern.",
-          "imageAlt": "Forged steel and brass details",
-          "details": "A practical cloak fastener with a restrained knot design, forged from iron and finished by hand.",
-          "variants": [{"id":"small","label":"Small","adjustment":0},{"id":"large","label":"Large","adjustment":35}]
-        },
-        "de": {
-          "name": "Eisenfibel „Sonnenknoten“",
-          "category": "Kleidung & Schmuck",
-          "description": "Eine handgeschmiedete Mantelfibel mit schlichtem Knotenmuster.",
-          "imageAlt": "Geschmiedete Stahl- und Messingdetails",
-          "details": "Eine praktische Mantelschließe mit dezentem Knotenmuster, aus Eisen geschmiedet und von Hand vollendet.",
-          "variants": [{"id":"small","label":"Klein","adjustment":0},{"id":"large","label":"Groß","adjustment":35}]
-        }
-      },
-      "translationsUk": {
-        "details": "Практична застібка для плаща зі стриманим вузловим орнаментом, кована із заліза та оздоблена вручну.",
-        "variants": [{"id":"small","label":"Мала","adjustment":0},{"id":"large","label":"Велика","adjustment":35}]
-      }
-    },
-    {
-      "id": "lantern-hook",
-      "name": "Гак для ліхтаря",
-      "category": "Для дому",
-      "price": 150,
-      "description": "Кований гак для підвішування ліхтаря біля входу чи в майстерні.",
-      "popular": 68,
-      "image": "static/images/Sax_mech_gatling.webp",
-      "imageAlt": "Латунні деталі механізму",
-      "warrantyPrice": 25,
-      "translations": {
-        "en": {
-          "name": "Lantern Hook",
-          "category": "For the home",
-          "description": "A forged hook for hanging a lantern by an entrance or in a workshop.",
-          "imageAlt": "Brass details on a machine",
-          "details": "A forged iron hook for securely hanging a lantern in a workshop, entryway or covered porch.",
-          "variants": [{"id":"standard","label":"Standard","adjustment":0},{"id":"reinforced","label":"Reinforced","adjustment":25}]
-        },
-        "de": {
-          "name": "Laternenhaken",
-          "category": "Fürs Zuhause",
-          "description": "Ein geschmiedeter Haken zum Aufhängen einer Laterne am Eingang oder in der Werkstatt.",
-          "imageAlt": "Messingdetails an einer Maschine",
-          "details": "Ein geschmiedeter Eisenhaken zum sicheren Aufhängen einer Laterne in Werkstatt, Eingangsbereich oder überdachtem Vorbau.",
-          "variants": [{"id":"standard","label":"Standard","adjustment":0},{"id":"reinforced","label":"Verstärkt","adjustment":25}]
-        }
-      },
-      "translationsUk": {
-        "details": "Кований залізний гак для надійного підвішування ліхтаря у майстерні, передпокої чи під навісом.",
-        "variants": [{"id":"standard","label":"Стандартний","adjustment":0},{"id":"reinforced","label":"Посилений","adjustment":25}]
+        "details": "SKS-300 Kaiser — вершина лінійки Schwerer Kampfschreiter. Величезні опори, багатошарова броня й центральний реактор забезпечують максимальну вогневу потужність.",
+        "variants": [
+          {
+            "id": "fortress",
+            "label": "Мобільна фортеця",
+            "adjustment": 0
+          },
+          {
+            "id": "rail",
+            "label": "Підсилений залізний корпус",
+            "adjustment": 19000
+          },
+          {
+            "id": "command",
+            "label": "Верховний командний",
+            "adjustment": 28000
+          }
+        ]
       }
     }
   ]

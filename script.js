@@ -54,6 +54,30 @@ function formatPrice(amount) {
   return `${number} ${t("currency")}`;
 }
 
+// Generate a short mechanical sound with the Web Audio API; no audio files are required.
+function playCouponSound(soundName) {
+  const AudioContext = window.AudioContext || window.webkitAudioContext;
+  if (!AudioContext) return;
+  const context = new AudioContext();
+  const oscillator = context.createOscillator();
+  const gain = context.createGain();
+  const settings = {
+    brass: [660, 880, 0.08],
+    steam: [180, 95, 0.16],
+    forge: [110, 55, 0.22]
+  };
+  const [from, to, duration] = settings[soundName] || settings.forge;
+  oscillator.type = soundName === "steam" ? "triangle" : "square";
+  oscillator.frequency.setValueAtTime(from, context.currentTime);
+  oscillator.frequency.exponentialRampToValueAtTime(to, context.currentTime + duration);
+  gain.gain.setValueAtTime(0.045, context.currentTime);
+  gain.gain.exponentialRampToValueAtTime(0.001, context.currentTime + duration);
+  oscillator.connect(gain);
+  gain.connect(context.destination);
+  oscillator.start();
+  oscillator.stop(context.currentTime + duration);
+}
+
 function getCart() {
   return JSON.parse(localStorage.getItem(CART_KEY) || "[]");
 }
@@ -288,11 +312,31 @@ function showProductDetail() {
   document.querySelector("#product-breadcrumb").textContent = localized.name;
 
   const article = makeElement("article", "row g-4 product-detail-layout");
-  const imageColumn = makeElement("div", "col-12 col-lg-5");
+  // The gallery uses every available product image and keeps the main view easy to change.
+  const imageColumn = makeElement("div", "col-12 col-lg-5 product-gallery");
   const image = makeElement("img", "product-detail-image");
-  image.src = product.image;
+  const photos = product.images && product.images.length ? product.images : [product.image];
+  image.src = photos[0];
   image.alt = localized.imageAlt;
   imageColumn.append(image);
+  if (photos.length > 1) {
+    const thumbnails = makeElement("div", "product-gallery-thumbnails");
+    photos.forEach((photo, index) => {
+      const button = makeElement("button", `product-gallery-thumb${index === 0 ? " is-active" : ""}`);
+      button.type = "button";
+      const thumb = makeElement("img");
+      thumb.src = photo;
+      thumb.alt = `${localized.imageAlt} ${index + 1}`;
+      button.append(thumb);
+      button.addEventListener("click", () => {
+        image.src = photo;
+        thumbnails.querySelectorAll(".product-gallery-thumb").forEach((item) => item.classList.remove("is-active"));
+        button.classList.add("is-active");
+      });
+      thumbnails.append(button);
+    });
+    imageColumn.append(thumbnails);
+  }
 
   const content = makeElement("div", "col-12 col-lg-7 product-detail-card");
   content.append(
@@ -359,8 +403,10 @@ function showProductDetail() {
 }
 
 function cartTotals(cart) {
+  // Skip stale cart entries left after the catalog is changed; this keeps old saved carts safe.
   const subtotal = cart.reduce((total, item) => {
     const product = shopData.products.find((entry) => entry.id === item.productId);
+    if (!product) return total;
     return total + linePrice(product, item);
   }, 0);
   const code = localStorage.getItem("grimbart-coupon") || "";
@@ -388,7 +434,10 @@ function addField(form, key, type, required = true, placeholder = "") {
 
 function renderCart() {
   const root = document.querySelector("#cart-content");
-  const cart = getCart();
+  const cart = getCart().filter((item) =>
+    shopData.products.some((product) => product.id === item.productId)
+  );
+  if (cart.length !== getCart().length) saveCart(cart);
   root.replaceChildren(makeElement("h1", "page-title", t("cartTitle")));
   if (cart.length === 0) {
     root.append(makeElement("p", "empty-cart", t("emptyCart")));
@@ -403,6 +452,7 @@ function renderCart() {
   const summaryColumn = makeElement("section", "col-12 col-lg-5");
   cart.forEach((item, index) => {
     const product = shopData.products.find((entry) => entry.id === item.productId);
+    if (!product) return; // Ignore an item removed from an older catalog version.
     const localized = productText(product);
     const row = makeElement("article", "cart-item");
     const image = makeElement("img", "cart-item-image");
@@ -471,8 +521,12 @@ function renderCart() {
   couponForm.addEventListener("submit", (event) => {
     event.preventDefault();
     const code = couponInput.value.trim().toUpperCase();
-    if (shopData.coupons[code]) localStorage.setItem("grimbart-coupon", code);
-    else localStorage.removeItem("grimbart-coupon");
+    if (shopData.coupons[code]) {
+      localStorage.setItem("grimbart-coupon", code);
+      playCouponSound(shopData.coupons[code].sound); // Each coupon has a small mechanical sound signature.
+    } else {
+      localStorage.removeItem("grimbart-coupon");
+    }
     updateTotals();
     if (code && !shopData.coupons[code]) couponMessage.textContent = t("couponInvalid");
   });
